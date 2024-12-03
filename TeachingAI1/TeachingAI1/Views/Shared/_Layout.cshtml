@@ -31,6 +31,46 @@
                         </li> 
                     </ul>
 
+                    <!-- #region -->
+                    <ul class="navbar-nav">
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Logout">Logout</a>
+                            </li>
+
+                            @* role based navigation *@
+                            @if (User.IsInRole("Admin"))
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Admin" asp-action="Settings">Admin Settings</a>
+                                </li>
+                            }
+                            @if (User.IsInRole("Teacher"))
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Teacher" asp-action="Dashboard">Teacher Dashboard</a>
+                                </li>
+                            }
+                            @if (User.IsInRole("Student"))
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-area="" asp-controller="Student" asp-action="Dashboard">Student Dashboard</a>
+                                </li>
+                            }
+
+                        }
+                        else 
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Login">Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Register">Sign Up</a>
+                            </li>
+                        }
+                    </ul>
+
                     <!-- START:- Adding a search bar here  -->
                     <form class="d-flex" method="get" asp-controller="Home" asp-action="Search">
                         <input class="form-control me-2" type="search" name="query" placeholder="Search..." aria-label="Search">

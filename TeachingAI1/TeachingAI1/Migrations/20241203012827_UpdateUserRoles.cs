@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
+using TeachingAI1.Data;
 
 #nullable disable
 

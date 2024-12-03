@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 
+namespace TeachingAI1.Data
+{
 public class ApplicationDbContext : DbContext
 {
     // Constructor
@@ -16,4 +18,4 @@ public class ApplicationDbContext : DbContext
 	public DbSet<AIInteraction>? AIInteractions {get; set;}
 	
 }
-
+}

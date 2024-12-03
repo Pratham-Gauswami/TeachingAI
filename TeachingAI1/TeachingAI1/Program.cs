@@ -1,9 +1,23 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
+using TeachingAI1.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+//Add session services
+builder.Services.AddDistributedMemoryCache();
+
+//Enable session services
+builder.Services.AddDistributedMemoryCache();
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(30); //Setting session timeout
+    options.Cookie.HttpOnly = true; //Make session cookies Http-only for security
+    options.Cookie.IsEssential = true; //Required for GDPR compliance
+});
 
 //Need to add my 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
@@ -22,6 +36,8 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseStaticFiles(); //Need to make sure the static files are served
 app.UseRouting();
+
+app.UseSession();
 
 app.UseAuthorization();
 
