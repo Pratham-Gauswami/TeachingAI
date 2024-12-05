@@ -1,3 +1,21 @@
 ﻿@{
     Layout = "_Layout";
+
+    var role = Context.Session.GetString("Role");
+
+    if(role == "Admin")
+    {
+        Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    } else if (role == "Tecaher")
+    {
+        Layout = "~/Views/Shared/_TeacherLayout.cshtml";
+    }
+    else if (role == "Student")
+    {
+        Layout = "~/Views/Shared/_StudentLayout.cshtml";
+    }
+    else
+    {
+        Layout = "~/Views/Shared/_Layout.cshtml"; // Default layout
+    }
 }

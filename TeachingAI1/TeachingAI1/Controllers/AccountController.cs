@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -67,6 +68,8 @@ namespace TeachingAI1.Controllers
 
         public IActionResult Logout()
         {
+            HttpContext.Session.Clear();
+            HttpContext.SignOutAsync();
             return RedirectToAction("Index", "Home");
         }
 
@@ -75,11 +78,11 @@ namespace TeachingAI1.Controllers
             switch (role)
             {
                 case "Student":
-                    return RedirectToAction("Index", "Student");
+                    return RedirectToAction("Index1", "Student");
                 case "Teacher":
-                    return RedirectToAction("Index", "Teacher");
+                    return RedirectToAction("Index1", "Teacher");
                 case "Admin":
-                    return RedirectToAction("Index", "Admin");
+                    return RedirectToAction("Index1", "Admin");
                 default:
                     return RedirectToAction("Login");
 
