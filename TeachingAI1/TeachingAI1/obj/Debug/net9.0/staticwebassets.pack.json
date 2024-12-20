@@ -5,12 +5,424 @@
       "PackagePath": "staticwebassets/TeachingAI1.sun3a4epwb.bundle.scp.css"
     },
     {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/css/account.css",
+      "PackagePath": "staticwebassets/css/account.css"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/css/login.css",
+      "PackagePath": "staticwebassets/css/login.css"
+    },
+    {
       "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/css/site.css",
       "PackagePath": "staticwebassets/css/site.css"
     },
     {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/css/style.css",
+      "PackagePath": "staticwebassets/css/style.css"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/css/style.css.map",
+      "PackagePath": "staticwebassets/css/style.css.map"
+    },
+    {
       "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/favicon.ico",
       "PackagePath": "staticwebassets/favicon.ico"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/material-icon/css/material-design-iconic-font.css",
+      "PackagePath": "staticwebassets/fonts/material-icon/css/material-design-iconic-font.css"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/material-icon/css/material-design-iconic-font.min.css",
+      "PackagePath": "staticwebassets/fonts/material-icon/css/material-design-iconic-font.min.css"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/material-icon/fonts/Material-Design-Iconic-Font.eot",
+      "PackagePath": "staticwebassets/fonts/material-icon/fonts/Material-Design-Iconic-Font.eot"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/material-icon/fonts/Material-Design-Iconic-Font.svg",
+      "PackagePath": "staticwebassets/fonts/material-icon/fonts/Material-Design-Iconic-Font.svg"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/material-icon/fonts/Material-Design-Iconic-Font.ttf",
+      "PackagePath": "staticwebassets/fonts/material-icon/fonts/Material-Design-Iconic-Font.ttf"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/material-icon/fonts/Material-Design-Iconic-Font.woff",
+      "PackagePath": "staticwebassets/fonts/material-icon/fonts/Material-Design-Iconic-Font.woff"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/material-icon/fonts/Material-Design-Iconic-Font.woff2",
+      "PackagePath": "staticwebassets/fonts/material-icon/fonts/Material-Design-Iconic-Font.woff2"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/poppins-v5-latin-300.eot",
+      "PackagePath": "staticwebassets/fonts/poppins/poppins-v5-latin-300.eot"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/poppins-v5-latin-300.svg",
+      "PackagePath": "staticwebassets/fonts/poppins/poppins-v5-latin-300.svg"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/poppins-v5-latin-300.ttf",
+      "PackagePath": "staticwebassets/fonts/poppins/poppins-v5-latin-300.ttf"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/poppins-v5-latin-300.woff",
+      "PackagePath": "staticwebassets/fonts/poppins/poppins-v5-latin-300.woff"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/poppins-v5-latin-300.woff2",
+      "PackagePath": "staticwebassets/fonts/poppins/poppins-v5-latin-300.woff2"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/poppins-v5-latin-300italic.eot",
+      "PackagePath": "staticwebassets/fonts/poppins/poppins-v5-latin-300italic.eot"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/poppins-v5-latin-300italic.svg",
+      "PackagePath": "staticwebassets/fonts/poppins/poppins-v5-latin-300italic.svg"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/poppins-v5-latin-300italic.ttf",
+      "PackagePath": "staticwebassets/fonts/poppins/poppins-v5-latin-300italic.ttf"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/poppins-v5-latin-300italic.woff",
+      "PackagePath": "staticwebassets/fonts/poppins/poppins-v5-latin-300italic.woff"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/poppins-v5-latin-300italic.woff2",
+      "PackagePath": "staticwebassets/fonts/poppins/poppins-v5-latin-300italic.woff2"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/poppins-v5-latin-500.eot",
+      "PackagePath": "staticwebassets/fonts/poppins/poppins-v5-latin-500.eot"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/poppins-v5-latin-500.svg",
+      "PackagePath": "staticwebassets/fonts/poppins/poppins-v5-latin-500.svg"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/poppins-v5-latin-500.ttf",
+      "PackagePath": "staticwebassets/fonts/poppins/poppins-v5-latin-500.ttf"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/poppins-v5-latin-500.woff",
+      "PackagePath": "staticwebassets/fonts/poppins/poppins-v5-latin-500.woff"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/poppins-v5-latin-500.woff2",
+      "PackagePath": "staticwebassets/fonts/poppins/poppins-v5-latin-500.woff2"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/poppins-v5-latin-500italic.eot",
+      "PackagePath": "staticwebassets/fonts/poppins/poppins-v5-latin-500italic.eot"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/poppins-v5-latin-500italic.svg",
+      "PackagePath": "staticwebassets/fonts/poppins/poppins-v5-latin-500italic.svg"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/poppins-v5-latin-500italic.ttf",
+      "PackagePath": "staticwebassets/fonts/poppins/poppins-v5-latin-500italic.ttf"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/poppins-v5-latin-500italic.woff",
+      "PackagePath": "staticwebassets/fonts/poppins/poppins-v5-latin-500italic.woff"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/poppins-v5-latin-500italic.woff2",
+      "PackagePath": "staticwebassets/fonts/poppins/poppins-v5-latin-500italic.woff2"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/poppins-v5-latin-600.eot",
+      "PackagePath": "staticwebassets/fonts/poppins/poppins-v5-latin-600.eot"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/poppins-v5-latin-600.svg",
+      "PackagePath": "staticwebassets/fonts/poppins/poppins-v5-latin-600.svg"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/poppins-v5-latin-600.ttf",
+      "PackagePath": "staticwebassets/fonts/poppins/poppins-v5-latin-600.ttf"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/poppins-v5-latin-600.woff",
+      "PackagePath": "staticwebassets/fonts/poppins/poppins-v5-latin-600.woff"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/poppins-v5-latin-600.woff2",
+      "PackagePath": "staticwebassets/fonts/poppins/poppins-v5-latin-600.woff2"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/poppins-v5-latin-700.eot",
+      "PackagePath": "staticwebassets/fonts/poppins/poppins-v5-latin-700.eot"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/poppins-v5-latin-700.svg",
+      "PackagePath": "staticwebassets/fonts/poppins/poppins-v5-latin-700.svg"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/poppins-v5-latin-700.ttf",
+      "PackagePath": "staticwebassets/fonts/poppins/poppins-v5-latin-700.ttf"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/poppins-v5-latin-700.woff",
+      "PackagePath": "staticwebassets/fonts/poppins/poppins-v5-latin-700.woff"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/poppins-v5-latin-700.woff2",
+      "PackagePath": "staticwebassets/fonts/poppins/poppins-v5-latin-700.woff2"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/poppins-v5-latin-700italic.eot",
+      "PackagePath": "staticwebassets/fonts/poppins/poppins-v5-latin-700italic.eot"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/poppins-v5-latin-700italic.svg",
+      "PackagePath": "staticwebassets/fonts/poppins/poppins-v5-latin-700italic.svg"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/poppins-v5-latin-700italic.ttf",
+      "PackagePath": "staticwebassets/fonts/poppins/poppins-v5-latin-700italic.ttf"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/poppins-v5-latin-700italic.woff",
+      "PackagePath": "staticwebassets/fonts/poppins/poppins-v5-latin-700italic.woff"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/poppins-v5-latin-700italic.woff2",
+      "PackagePath": "staticwebassets/fonts/poppins/poppins-v5-latin-700italic.woff2"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/poppins-v5-latin-800.eot",
+      "PackagePath": "staticwebassets/fonts/poppins/poppins-v5-latin-800.eot"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/poppins-v5-latin-800.svg",
+      "PackagePath": "staticwebassets/fonts/poppins/poppins-v5-latin-800.svg"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/poppins-v5-latin-800.ttf",
+      "PackagePath": "staticwebassets/fonts/poppins/poppins-v5-latin-800.ttf"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/poppins-v5-latin-800.woff",
+      "PackagePath": "staticwebassets/fonts/poppins/poppins-v5-latin-800.woff"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/poppins-v5-latin-800.woff2",
+      "PackagePath": "staticwebassets/fonts/poppins/poppins-v5-latin-800.woff2"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/poppins-v5-latin-800italic.eot",
+      "PackagePath": "staticwebassets/fonts/poppins/poppins-v5-latin-800italic.eot"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/poppins-v5-latin-800italic.svg",
+      "PackagePath": "staticwebassets/fonts/poppins/poppins-v5-latin-800italic.svg"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/poppins-v5-latin-800italic.ttf",
+      "PackagePath": "staticwebassets/fonts/poppins/poppins-v5-latin-800italic.ttf"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/poppins-v5-latin-800italic.woff",
+      "PackagePath": "staticwebassets/fonts/poppins/poppins-v5-latin-800italic.woff"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/poppins-v5-latin-800italic.woff2",
+      "PackagePath": "staticwebassets/fonts/poppins/poppins-v5-latin-800italic.woff2"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/poppins-v5-latin-900.eot",
+      "PackagePath": "staticwebassets/fonts/poppins/poppins-v5-latin-900.eot"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/poppins-v5-latin-900.svg",
+      "PackagePath": "staticwebassets/fonts/poppins/poppins-v5-latin-900.svg"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/poppins-v5-latin-900.ttf",
+      "PackagePath": "staticwebassets/fonts/poppins/poppins-v5-latin-900.ttf"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/poppins-v5-latin-900.woff",
+      "PackagePath": "staticwebassets/fonts/poppins/poppins-v5-latin-900.woff"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/poppins-v5-latin-900.woff2",
+      "PackagePath": "staticwebassets/fonts/poppins/poppins-v5-latin-900.woff2"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/poppins-v5-latin-italic.eot",
+      "PackagePath": "staticwebassets/fonts/poppins/poppins-v5-latin-italic.eot"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/poppins-v5-latin-italic.svg",
+      "PackagePath": "staticwebassets/fonts/poppins/poppins-v5-latin-italic.svg"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/poppins-v5-latin-italic.ttf",
+      "PackagePath": "staticwebassets/fonts/poppins/poppins-v5-latin-italic.ttf"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/poppins-v5-latin-italic.woff",
+      "PackagePath": "staticwebassets/fonts/poppins/poppins-v5-latin-italic.woff"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/poppins-v5-latin-italic.woff2",
+      "PackagePath": "staticwebassets/fonts/poppins/poppins-v5-latin-italic.woff2"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/poppins-v5-latin-regular.eot",
+      "PackagePath": "staticwebassets/fonts/poppins/poppins-v5-latin-regular.eot"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/poppins-v5-latin-regular.svg",
+      "PackagePath": "staticwebassets/fonts/poppins/poppins-v5-latin-regular.svg"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/poppins-v5-latin-regular.ttf",
+      "PackagePath": "staticwebassets/fonts/poppins/poppins-v5-latin-regular.ttf"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/poppins-v5-latin-regular.woff",
+      "PackagePath": "staticwebassets/fonts/poppins/poppins-v5-latin-regular.woff"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/poppins-v5-latin-regular.woff2",
+      "PackagePath": "staticwebassets/fonts/poppins/poppins-v5-latin-regular.woff2"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/roboto-condensed-v16-latin-700.eot",
+      "PackagePath": "staticwebassets/fonts/poppins/roboto-condensed-v16-latin-700.eot"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/roboto-condensed-v16-latin-700.svg",
+      "PackagePath": "staticwebassets/fonts/poppins/roboto-condensed-v16-latin-700.svg"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/roboto-condensed-v16-latin-700.ttf",
+      "PackagePath": "staticwebassets/fonts/poppins/roboto-condensed-v16-latin-700.ttf"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/roboto-condensed-v16-latin-700.woff",
+      "PackagePath": "staticwebassets/fonts/poppins/roboto-condensed-v16-latin-700.woff"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/roboto-condensed-v16-latin-700.woff2",
+      "PackagePath": "staticwebassets/fonts/poppins/roboto-condensed-v16-latin-700.woff2"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/roboto-condensed-v16-latin-700italic.eot",
+      "PackagePath": "staticwebassets/fonts/poppins/roboto-condensed-v16-latin-700italic.eot"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/roboto-condensed-v16-latin-700italic.svg",
+      "PackagePath": "staticwebassets/fonts/poppins/roboto-condensed-v16-latin-700italic.svg"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/roboto-condensed-v16-latin-700italic.ttf",
+      "PackagePath": "staticwebassets/fonts/poppins/roboto-condensed-v16-latin-700italic.ttf"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/roboto-condensed-v16-latin-700italic.woff",
+      "PackagePath": "staticwebassets/fonts/poppins/roboto-condensed-v16-latin-700italic.woff"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/roboto-condensed-v16-latin-700italic.woff2",
+      "PackagePath": "staticwebassets/fonts/poppins/roboto-condensed-v16-latin-700italic.woff2"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/roboto-condensed-v16-latin-italic.eot",
+      "PackagePath": "staticwebassets/fonts/poppins/roboto-condensed-v16-latin-italic.eot"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/roboto-condensed-v16-latin-italic.svg",
+      "PackagePath": "staticwebassets/fonts/poppins/roboto-condensed-v16-latin-italic.svg"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/roboto-condensed-v16-latin-italic.ttf",
+      "PackagePath": "staticwebassets/fonts/poppins/roboto-condensed-v16-latin-italic.ttf"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/roboto-condensed-v16-latin-italic.woff",
+      "PackagePath": "staticwebassets/fonts/poppins/roboto-condensed-v16-latin-italic.woff"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/roboto-condensed-v16-latin-italic.woff2",
+      "PackagePath": "staticwebassets/fonts/poppins/roboto-condensed-v16-latin-italic.woff2"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/roboto-condensed-v16-latin-regular.eot",
+      "PackagePath": "staticwebassets/fonts/poppins/roboto-condensed-v16-latin-regular.eot"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/roboto-condensed-v16-latin-regular.svg",
+      "PackagePath": "staticwebassets/fonts/poppins/roboto-condensed-v16-latin-regular.svg"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/roboto-condensed-v16-latin-regular.ttf",
+      "PackagePath": "staticwebassets/fonts/poppins/roboto-condensed-v16-latin-regular.ttf"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/roboto-condensed-v16-latin-regular.woff",
+      "PackagePath": "staticwebassets/fonts/poppins/roboto-condensed-v16-latin-regular.woff"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/fonts/poppins/roboto-condensed-v16-latin-regular.woff2",
+      "PackagePath": "staticwebassets/fonts/poppins/roboto-condensed-v16-latin-regular.woff2"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/images/2784283.jpg",
+      "PackagePath": "staticwebassets/images/2784283.jpg"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/images/Admin.jpg",
+      "PackagePath": "staticwebassets/images/Admin.jpg"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/images/LoginPage.jpg",
+      "PackagePath": "staticwebassets/images/LoginPage.jpg"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/images/Teacher.jpg",
+      "PackagePath": "staticwebassets/images/Teacher.jpg"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/images/man-desk-with-laptop/3630139.ai",
+      "PackagePath": "staticwebassets/images/man-desk-with-laptop/3630139.ai"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/images/man-desk-with-laptop/3630141.eps",
+      "PackagePath": "staticwebassets/images/man-desk-with-laptop/3630141.eps"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/images/man-desk-with-laptop/License free.txt",
+      "PackagePath": "staticwebassets/images/man-desk-with-laptop/License free.txt"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/images/man-desk-with-laptop/License premium.txt",
+      "PackagePath": "staticwebassets/images/man-desk-with-laptop/License premium.txt"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/images/man-desk-with-laptop/Student.jpg",
+      "PackagePath": "staticwebassets/images/man-desk-with-laptop/Student.jpg"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/images/signin-image.jpg",
+      "PackagePath": "staticwebassets/images/signin-image.jpg"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/images/signup-image.jpg",
+      "PackagePath": "staticwebassets/images/signup-image.jpg"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/js/main.js",
+      "PackagePath": "staticwebassets/js/main.js"
     },
     {
       "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/js/site.js",
@@ -255,6 +667,46 @@
     {
       "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/lib/jquery/dist/jquery.slim.min.map",
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.slim.min.map"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/scss/common/extend.scss",
+      "PackagePath": "staticwebassets/scss/common/extend.scss"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/scss/common/fonts.scss",
+      "PackagePath": "staticwebassets/scss/common/fonts.scss"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/scss/common/global.scss",
+      "PackagePath": "staticwebassets/scss/common/global.scss"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/scss/common/minxi.scss",
+      "PackagePath": "staticwebassets/scss/common/minxi.scss"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/scss/common/variables.scss",
+      "PackagePath": "staticwebassets/scss/common/variables.scss"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/scss/layouts/main.scss",
+      "PackagePath": "staticwebassets/scss/layouts/main.scss"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/scss/layouts/responsive.scss",
+      "PackagePath": "staticwebassets/scss/layouts/responsive.scss"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/scss/style.scss",
+      "PackagePath": "staticwebassets/scss/style.scss"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/vendor/jquery/jquery-ui.min.js",
+      "PackagePath": "staticwebassets/vendor/jquery/jquery-ui.min.js"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/vendor/jquery/jquery.min.js",
+      "PackagePath": "staticwebassets/vendor/jquery/jquery.min.js"
     },
     {
       "Id": "obj/Debug/net9.0/staticwebassets/msbuild.TeachingAI1.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

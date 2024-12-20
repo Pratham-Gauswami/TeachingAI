@@ -19,6 +19,7 @@ namespace TeachingAI1.Controllers
 
         public IActionResult Dashboard()
         {
+            ViewData["ShowSearch"] = true;
             return View();
         }
     }
