@@ -25,6 +25,10 @@
       "PackagePath": "staticwebassets/css/style.css.map"
     },
     {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/css/style2.css",
+      "PackagePath": "staticwebassets/css/style2.css"
+    },
+    {
       "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/favicon.ico",
       "PackagePath": "staticwebassets/favicon.ico"
     },

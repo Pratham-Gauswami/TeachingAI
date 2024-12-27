@@ -5,15 +5,17 @@
 }
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Admin Dashboard - @ViewData["Title"]</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] Student Portal</title>
+    <link rel="stylesheet" href="~/css/styles.css" />
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Admin Portal</a>
+            <a class="navbar-brand" href="#">Student Portal</a>
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <a class="nav-link" asp-controller="Account" asp-action="Logout">Logout</a>
@@ -22,7 +24,19 @@
         </nav>
     </header>
     <div class="container">
-        @RenderBody()
+        <div class="dashboard-container">
+            <aside class="sidebar">
+                <ul class="sidebar-menu">
+                    <li><a asp-controller="Dashboard" asp-action="Lessons">Lessons</a></li>
+                    <li><a asp-controller="Dashboard" asp-action="Courses">Courses</a></li>
+                    <li><a asp-controller="Dashboard" asp-action="ProgressTracking">Progress Tracking</a></li>
+                </ul>
+            </aside>
+            <main class="dashboard-main">
+                @RenderBody()
+            </main>
+        </div>
     </div>
 </body>
 </html>
+

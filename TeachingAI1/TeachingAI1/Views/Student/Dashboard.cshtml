@@ -1,8 +1,63 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@{
+
 }
 
-<h1>Welcome, Student</h1>
-<p>Access your courses, assignments, and grades here.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="~/css/style2.css" /> 
+</head>
+<body>
+    <!-- Main Content -->
+    <main class="dashboard-main">
+        <!-- Lessons Section -->
+        <section id="lessons" class="dashboard-section">
+            <h2>Lessons</h2>
+            <div class="lessons-list">
+                <!-- Cards for individual lessons will go here -->
+                <div class="lesson-card">
+                    <h3>Lesson Title</h3>
+                    <p>Short description of the lesson...</p>
+                    <button>Continue</button>
+                </div>
+                <!-- Add more cards as needed -->
+            </div>
+        </section>
+
+        <!-- Courses Section -->
+        <section id="courses" class="dashboard-section">
+            <h2>Courses</h2>
+            <div class="courses-list">
+                <!-- Cards for individual courses -->
+                <div class="course-card">
+                    <h3>Course Title</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 70%;"></div> <!-- Example progress -->
+                    </div>
+                    <p>70% Complete</p>
+                </div>
+                <!-- Add more cards as needed -->
+            </div>
+        </section>
+
+        <!-- Progress Tracking Section -->
+        <section id="progress" class="dashboard-section">
+            <h2>Progress Report</h2>
+            <div class="progress-tracking">
+                <!-- Placeholder for progress charts -->
+                <p>Visual progress tracking coming soon!</p>
+                <button>View Detailed Report</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="dashboard-footer">
+        <p>Need help? <a href="#">Contact Support</a></p>
+    </footer>
+</body>
+</html>
+
