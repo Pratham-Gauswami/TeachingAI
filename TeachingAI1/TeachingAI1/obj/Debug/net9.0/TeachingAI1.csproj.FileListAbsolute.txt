@@ -10,6 +10,7 @@
 /Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/bin/Debug/net9.0/Azure.Core.dll
 /Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/bin/Debug/net9.0/Azure.Identity.dll
 /Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/bin/Debug/net9.0/BCrypt.Net-Next.dll
+/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/bin/Debug/net9.0/DnsClient.dll
 /Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/bin/Debug/net9.0/Humanizer.dll
 /Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/bin/Debug/net9.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 /Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/bin/Debug/net9.0/Microsoft.Bcl.AsyncInterfaces.dll
@@ -37,7 +38,11 @@
 /Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/bin/Debug/net9.0/Microsoft.IdentityModel.Tokens.dll
 /Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/bin/Debug/net9.0/Microsoft.SqlServer.Server.dll
 /Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/bin/Debug/net9.0/Microsoft.Win32.SystemEvents.dll
+/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/bin/Debug/net9.0/MongoDB.Bson.dll
+/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/bin/Debug/net9.0/MongoDB.Driver.dll
 /Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/bin/Debug/net9.0/Mono.TextTemplating.dll
+/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/bin/Debug/net9.0/SharpCompress.dll
+/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/bin/Debug/net9.0/Snappier.dll
 /Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/bin/Debug/net9.0/System.ClientModel.dll
 /Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/bin/Debug/net9.0/System.CodeDom.dll
 /Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/bin/Debug/net9.0/System.Composition.AttributedModel.dll
@@ -53,6 +58,7 @@
 /Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/bin/Debug/net9.0/System.Security.Cryptography.ProtectedData.dll
 /Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/bin/Debug/net9.0/System.Security.Permissions.dll
 /Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/bin/Debug/net9.0/System.Windows.Extensions.dll
+/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/bin/Debug/net9.0/ZstdSharp.dll
 /Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/bin/Debug/net9.0/cs/Microsoft.CodeAnalysis.resources.dll
 /Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/bin/Debug/net9.0/de/Microsoft.CodeAnalysis.resources.dll
 /Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/bin/Debug/net9.0/es/Microsoft.CodeAnalysis.resources.dll
@@ -147,6 +153,7 @@
 /Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/obj/Debug/net9.0/compressed/q4bi0k7dc6-b9sayid5wm.gz
 /Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/obj/Debug/net9.0/compressed/tk5v6npxy4-afm8kprkn2.gz
 /Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/obj/Debug/net9.0/compressed/gboztt9nes-od80b6cznv.gz
+/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/obj/Debug/net9.0/compressed/9tk238dant-kxl3z8q14o.gz
 /Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/obj/Debug/net9.0/compressed/zupl5vl2jg-61n19gt1b8.gz
 /Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/obj/Debug/net9.0/compressed/wzhobqky49-ynhneztwqn.gz
 /Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/obj/Debug/net9.0/compressed/mw5rui1tqs-6znn7ve9x9.gz
@@ -249,10 +256,3 @@
 /Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/obj/Debug/net9.0/TeachingAI1.pdb
 /Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/obj/Debug/net9.0/TeachingAI1.genruntimeconfig.cache
 /Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/obj/Debug/net9.0/ref/TeachingAI1.dll
-/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/bin/Debug/net9.0/DnsClient.dll
-/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/bin/Debug/net9.0/MongoDB.Bson.dll
-/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/bin/Debug/net9.0/MongoDB.Driver.dll
-/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/bin/Debug/net9.0/SharpCompress.dll
-/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/bin/Debug/net9.0/Snappier.dll
-/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/bin/Debug/net9.0/ZstdSharp.dll
-/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/obj/Debug/net9.0/compressed/9tk238dant-kxl3z8q14o.gz

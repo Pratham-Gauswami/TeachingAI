@@ -2104,13 +2104,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\TeachingAI1.sun3a4epwb.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-hJWw3DZeHTYmE1RT71s5cahV7qmu1683J9lyW4pdLtU="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1080"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022hJWw3DZeHTYmE1RT71s5cahV7qmu1683J9lyW4pdLtU=\u0022"},{"Name":"Last-Modified","Value":"Sun, 29 Dec 2024 18:27:31 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1080"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022hJWw3DZeHTYmE1RT71s5cahV7qmu1683J9lyW4pdLtU=\u0022"},{"Name":"Last-Modified","Value":"Mon, 30 Dec 2024 22:41:31 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/TeachingAI1/TeachingAI1.sun3a4epwb.bundle.scp.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\TeachingAI1.sun3a4epwb.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"sun3a4epwb"},{"Name":"integrity","Value":"sha256-hJWw3DZeHTYmE1RT71s5cahV7qmu1683J9lyW4pdLtU="},{"Name":"label","Value":"_content/TeachingAI1/TeachingAI1.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1080"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022hJWw3DZeHTYmE1RT71s5cahV7qmu1683J9lyW4pdLtU=\u0022"},{"Name":"Last-Modified","Value":"Sun, 29 Dec 2024 18:27:31 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1080"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022hJWw3DZeHTYmE1RT71s5cahV7qmu1683J9lyW4pdLtU=\u0022"},{"Name":"Last-Modified","Value":"Mon, 30 Dec 2024 22:41:31 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/TeachingAI1/vendor/jquery/jquery-ui.min.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\vendor\jquery\jquery-ui.min.js'))</AssetFile>

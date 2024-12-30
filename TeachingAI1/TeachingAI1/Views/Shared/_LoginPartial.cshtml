@@ -1,4 +1,6 @@
-﻿<!-- #region -->
+﻿@* WORKING PARTIAL FILE (IGNORE THE REST) *@
+
+<!-- #region -->
 <ul class="navbar-nav">
     @if (User.Identity.IsAuthenticated)
     {
@@ -10,7 +12,7 @@
         @if (User.IsInRole("Admin"))
         {
             <li class="nav-item">
-                <a class="nav-link text-dark" asp-area="" asp-controller="Admin" asp-action="Settings">Admin Settings</a>
+                <a class="nav-link text-dark" asp-area="" asp-controller="Admin" asp-action="Index1">Admin Dashboard</a>
             </li>
         }
         @if (User.IsInRole("Teacher"))

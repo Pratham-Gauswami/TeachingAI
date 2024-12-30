@@ -69,7 +69,9 @@ namespace TeachingAI1.Controllers
                 };
 
                 //Create the identity and principal
+                //Identity: This identity represents the user's authentication and holds the claims
                 var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+                //principal: This principal is the main object that represents the user and is used for authorization
                 var claimsPrincipal = new ClaimsPrincipal(claimsIdentity);
 
                 //Sign the user in with the claims
@@ -79,7 +81,6 @@ namespace TeachingAI1.Controllers
                 return RedirectToAction("Dashboard", user.Role);
 
                 // HttpContext.Session.SetString("Role", user.Role);
-                // return RedirectToAction("Dashboard", user.Role);
            }
 
            //If login fails
@@ -87,8 +88,26 @@ namespace TeachingAI1.Controllers
            return View();
         }
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Logout()
         {
+            // var user = await _userManager.GetUserAsync(User); 
+            var UserId = User.FindFirst("UserId")?.Value; //get the logged in user
+
+            if(!string.IsNullOrEmpty(UserId))
+            {
+                //Fetching the user from the databse
+                var user  = await _context.Users.FindAsync(int.Parse(UserId));
+                //Logic for checking if anyone has logged in or not
+                if(user != null){
+                    //Updating user's loggedin status
+                    user.IsLoggedIn = false;
+                    _context.Update(user);
+                    await _context.SaveChangesAsync();
+                }
+            }
+            //Sign out the user and clear the authentication cookie
             await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
             return RedirectToAction("Index", "Home");
         }
@@ -107,6 +126,16 @@ namespace TeachingAI1.Controllers
                     return RedirectToAction("Login");
 
             }
+        }
+
+        public IActionResult Profile()
+        {
+            var username = User.FindFirst(ClaimTypes.Name)?. Value;
+            var email = User.FindFirst(ClaimTypes.Email)?.Value;
+            var userId = User.FindFirst("UserId")?.Value;
+            var role = User.FindFirst(ClaimTypes.Role)?.Value;
+
+            return View();
         }
 
   }
