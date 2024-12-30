@@ -1,4 +1,6 @@
 ﻿@{
+    //Checking for the current user and displaying name
+    var userName = User.Identity.IsAuthenticated ? User.Identity.Name : "Guest";
 
 }
 
@@ -10,6 +12,9 @@
     <title>Student Dashboard</title>
     <link rel="stylesheet" href="~/css/style2.css" /> 
 </head>
+<header class="user-header">
+    <p>Welcome, @userName!</p>
+</header>
 <body>
     <!-- Main Content -->
     <main class="dashboard-main">

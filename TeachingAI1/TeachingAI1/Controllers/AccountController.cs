@@ -1,4 +1,6 @@
+using System.Security.Claims;
 using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -51,25 +53,43 @@ namespace TeachingAI1.Controllers
 
         //For log in - members
         [HttpPost]
-        public IActionResult Login(string username, string password)
+        public async Task<IActionResult> Login(string username, string password)
         {
             var user = _context.Users.FirstOrDefault(u => u.Name == username);
            
            if (user != null && BCrypt.Net.BCrypt.Verify(password, user.PasswordHash))
            {
                 //set session or authentication logic here
-                HttpContext.Session.SetString("Role", user.Role);
+                var claims = new List<Claim>
+                {
+                    new Claim(ClaimTypes.Name, user.Name),          //User's name
+                    new Claim(ClaimTypes.Email, user.Email),        //User's email
+                    new Claim("UserId", user.Id.ToString()),        //Custome claim for user ID
+                    new Claim(ClaimTypes.Role, user.Role)           //User's role
+                };
+
+                //Create the identity and principal
+                var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+                var claimsPrincipal = new ClaimsPrincipal(claimsIdentity);
+
+                //Sign the user in with the claims
+                await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, claimsPrincipal);
+
+                //Redirect based on the user's role
                 return RedirectToAction("Dashboard", user.Role);
+
+                // HttpContext.Session.SetString("Role", user.Role);
+                // return RedirectToAction("Dashboard", user.Role);
            }
 
+           //If login fails
            ModelState.AddModelError("", "Invalid login");
            return View();
         }
 
-        public IActionResult Logout()
+        public async Task<IActionResult> Logout()
         {
-            HttpContext.Session.Clear();
-            HttpContext.SignOutAsync();
+            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
             return RedirectToAction("Index", "Home");
         }
 

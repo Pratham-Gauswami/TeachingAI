@@ -19,6 +19,7 @@
         }
         .hero {
             text-align: center;
+    using Microsoft.AspNetCore.Mvc.Routing;
             padding: 100px 20px;
         }
         .hero h1 {
@@ -63,7 +64,7 @@
     <div class="hero">
         <h1>Empowering Learning with AI-Powered Tools</h1>
         <p>TeachingAI simplifies education by providing intelligent tools for students, teachers, and admins.</p>
-        <a href="#" class="btn btn-primary btn-lg">Get Started</a>
+        <a href="@Url.Action("Register", "Account")" class="btn btn-primary btn-lg">Get Started</a>
         <a href="#features" class="btn btn-outline-light btn-lg">Learn More</a>
     </div>
 

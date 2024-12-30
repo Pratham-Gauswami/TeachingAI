@@ -56,3 +56,12 @@
     background-color: #007bff;
     height: 100%;
 }
+
+.user-header {
+    background-color: #f8f9fa;
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: #000;
+}
