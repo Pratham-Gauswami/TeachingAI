@@ -1,3 +1,7 @@
+using System.Collections.Generic;
+
+namespace TeachingAI1.Models
+{
 public class User
 {
     public int Id { get; set; }
@@ -10,4 +14,5 @@ public class User
 
     public DateTime? LastActivity { get; set; }
     public DateTime CreatedAt { get; set; }
+}
 }

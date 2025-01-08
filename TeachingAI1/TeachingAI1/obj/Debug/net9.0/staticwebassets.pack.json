@@ -29,6 +29,10 @@
       "PackagePath": "staticwebassets/css/style2.css"
     },
     {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/css/tailwind.css",
+      "PackagePath": "staticwebassets/css/tailwind.css"
+    },
+    {
       "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/favicon.ico",
       "PackagePath": "staticwebassets/favicon.ico"
     },

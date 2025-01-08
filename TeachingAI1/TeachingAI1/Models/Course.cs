@@ -1,11 +1,14 @@
+using System.Collections.Generic;
+
+namespace TeachingAI1.Models
+{
 public class Course
 {
-    public int courseID {get; set;}
-
-    public string courseName {get; set;}
-    public string Description {get; set;}
-    public int TeacherId {get; set;} //Foreign Key for the Teacher
-    public User Teacher {get; set;}
-    public DateTime CreatedOn {get; set;}
-    public ICollection<Lesson> Lessons {get; set;} //A course can have multiple lessons
+    public int Id { get; set; }
+    public string Name { get; set; }
+    public string Status { get; set; }  // "Active", "Inactive", etc.
+    public int TeacherId { get; set; }
+    public Teacher Teacher { get; set; }
+    public ICollection<Student> Students { get; set; }
+}
 }

@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using TeachingAI1.Data;
+using TeachingAI1.Models;
 
 namespace TeachingAI1.Controllers
 {
@@ -53,39 +54,48 @@ namespace TeachingAI1.Controllers
 
         //For log in - members
         [HttpPost]
-        public async Task<IActionResult> Login(string username, string password)
+        public async Task<IActionResult> Login(LoginViewModel model)
         {
-            var user = _context.Users.FirstOrDefault(u => u.Name == username);
-           
-           if (user != null && BCrypt.Net.BCrypt.Verify(password, user.PasswordHash))
-           {
-                //set session or authentication logic here
-                var claims = new List<Claim>
-                {
-                    new Claim(ClaimTypes.Name, user.Name),          //User's name
-                    new Claim(ClaimTypes.Email, user.Email),        //User's email
-                    new Claim("UserId", user.Id.ToString()),        //Custome claim for user ID
-                    new Claim(ClaimTypes.Role, user.Role)           //User's role
-                };
+            // Verify login credentials
+            var teacher = await _context.Teachers
+                .FirstOrDefaultAsync(t => t.Email == model.Email);
 
-                //Create the identity and principal
-                //Identity: This identity represents the user's authentication and holds the claims
-                var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
-                //principal: This principal is the main object that represents the user and is used for authorization
-                var claimsPrincipal = new ClaimsPrincipal(claimsIdentity);
+            if (teacher == null || !VerifyPassword(model.Password, teacher.PasswordHash))
+            {
+                ModelState.AddModelError("", "Invalid login attempt.");
+                return View(model);
+            }
 
-                //Sign the user in with the claims
-                await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, claimsPrincipal);
+            // Create claims for the teacher
+            var claims = new List<Claim>
+            {
+                new Claim(ClaimTypes.NameIdentifier, teacher.Id.ToString()),
+                new Claim(ClaimTypes.Name, teacher.Name),
+                new Claim(ClaimTypes.Email, teacher.Email),
+                new Claim(ClaimTypes.Role, "Teacher")
+            };
 
-                //Redirect based on the user's role
-                return RedirectToAction("Dashboard", user.Role);
+            var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
 
-                // HttpContext.Session.SetString("Role", user.Role);
-           }
+            var authProperties = new AuthenticationProperties
+            {
+                IsPersistent = model.RememberMe,
+                ExpiresUtc = DateTimeOffset.UtcNow.AddDays(7)
+            };
 
-           //If login fails
-           ModelState.AddModelError("", "Invalid login");
-           return View();
+            await HttpContext.SignInAsync(
+                CookieAuthenticationDefaults.AuthenticationScheme,
+                new ClaimsPrincipal(claimsIdentity),
+                authProperties);
+
+            return RedirectToAction("Dashboard", "Teacher");
+        }
+
+        private bool VerifyPassword(string password, string hashedPassword)
+        {
+            // Implement your password verification logic here
+            // Example using BCrypt:
+            return BCrypt.Net.BCrypt.Verify(password, hashedPassword);
         }
 
         [HttpPost]

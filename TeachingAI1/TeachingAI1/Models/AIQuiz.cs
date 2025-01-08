@@ -1,3 +1,7 @@
+using System.Collections.Generic;
+
+namespace TeachingAI1.Models
+{
 public class Quiz
 {
     public int Id { get; set; }
@@ -6,4 +10,5 @@ public class Quiz
     public ICollection<string> Options { get; set; } // Multiple-choice options
     public int LessonId { get; set; }
     public Lesson Lesson { get; set; }
+}
 }

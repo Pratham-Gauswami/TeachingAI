@@ -1,5 +1,6 @@
 /Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/bin/Debug/net9.0/appsettings.Development.json
 /Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/bin/Debug/net9.0/appsettings.json
+/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/bin/Debug/net9.0/package.json
 /Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/bin/Debug/net9.0/TeachingAI1.staticwebassets.runtime.json
 /Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/bin/Debug/net9.0/TeachingAI1.staticwebassets.endpoints.json
 /Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/bin/Debug/net9.0/TeachingAI1
@@ -150,10 +151,11 @@
 /Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/obj/Debug/net9.0/scopedcss/projectbundle/TeachingAI1.bundle.scp.css
 /Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/obj/Debug/net9.0/compressed/x2wot6o26z-bicg4iwise.gz
 /Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/obj/Debug/net9.0/compressed/rgbc8cc9mo-7lz8lqwcjy.gz
-/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/obj/Debug/net9.0/compressed/q4bi0k7dc6-b9sayid5wm.gz
+/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/obj/Debug/net9.0/compressed/q4bi0k7dc6-04owg00asc.gz
 /Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/obj/Debug/net9.0/compressed/tk5v6npxy4-afm8kprkn2.gz
 /Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/obj/Debug/net9.0/compressed/gboztt9nes-od80b6cznv.gz
 /Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/obj/Debug/net9.0/compressed/9tk238dant-kxl3z8q14o.gz
+/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/obj/Debug/net9.0/compressed/yiud29sdh2-ofkv4yell3.gz
 /Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/obj/Debug/net9.0/compressed/zupl5vl2jg-61n19gt1b8.gz
 /Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/obj/Debug/net9.0/compressed/wzhobqky49-ynhneztwqn.gz
 /Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/obj/Debug/net9.0/compressed/mw5rui1tqs-6znn7ve9x9.gz

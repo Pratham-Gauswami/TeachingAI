@@ -5,5 +5,112 @@
     ViewData["ShowSearch"] = true;
 }
 
-<h1>Welcome, Teacher</h1>
-<p>Here you can manage courses, assignments, and student progress.</p>
+<div class="dashboard-container">
+    <!-- Welcome Section -->
+    <div class="welcome-section mb-4">
+        <h1>Welcome, @ViewBag.TeacherName</h1>
+        <p class="lead">Here you can manage courses, assignments, and student progress.</p>
+    </div>
+
+    <!-- Quick Stats Cards -->
+    <div class="row stats-section mb-4">
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Active Courses</h5>
+                    <h2 class="card-text">@ViewBag.ActiveCourses</h2>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Total Students</h5>
+                    <h2 class="card-text">@ViewBag.TotalStudents</h2>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Pending Assignments</h5>
+                    <h2 class="card-text">@ViewBag.PendingAssignments</h2>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">To Grade</h5>
+                    <h2 class="card-text">@ViewBag.ToGrade</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quick Actions -->
+    <div class="quick-actions mb-4">
+        <h3>Quick Actions</h3>
+        <div class="row">
+            <div class="col-md-3">
+                <a href="@Url.Action("Create", "Course")" class="btn btn-primary btn-block">
+                    <i class="fas fa-plus"></i> Create New Course
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="@Url.Action("Create", "Assignment")" class="btn btn-success btn-block">
+                    <i class="fas fa-tasks"></i> Add Assignment
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="@Url.Action("Grade", "Assignment")" class="btn btn-info btn-block">
+                    <i class="fas fa-check"></i> Grade Submissions
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="@Url.Action("Reports", "Teacher")" class="btn btn-secondary btn-block">
+                    <i class="fas fa-chart-bar"></i> View Reports
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Recent Activity -->
+    <div class="recent-activity">
+        <h3>Recent Activity</h3>
+        <div class="list-group">
+            @foreach (var activity in ViewBag.RecentActivities ?? new List<string>())
+            {
+                <a href="#" class="list-group-item list-group-item-action">
+                    @activity
+                </a>
+            }
+        </div>
+    </div>
+</div>
+
+@section Styles {
+    <style>
+        .dashboard-container {
+            padding: 20px;
+        }
+        .stats-section .card {
+            transition: transform 0.2s;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .stats-section .card:hover {
+            transform: translateY(-5px);
+        }
+        .quick-actions .btn {
+            margin-bottom: 10px;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .recent-activity {
+            border-radius: 10px;
+            padding: 15px;
+            background-color: #f8f9fa;
+        }
+    </style>
+}

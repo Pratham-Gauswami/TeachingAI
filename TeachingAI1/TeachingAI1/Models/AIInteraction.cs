@@ -1,3 +1,7 @@
+using System.Collections.Generic;
+
+namespace TeachingAI1.Models
+{
 public class AIInteraction
 {
     public int Id { get; set; }
@@ -6,4 +10,5 @@ public class AIInteraction
     public string Input { get; set; } // Question or topic entered by the user
     public string AIResponse { get; set; }
     public DateTime Timestamp { get; set; }
+}
 }

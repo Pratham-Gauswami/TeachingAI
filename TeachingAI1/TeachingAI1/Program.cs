@@ -29,6 +29,11 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
 {
     options.LoginPath = "/Account/Login"; //Path to login page
     // options.LoginPath = "/Account/Logout"; //Path to logout page
+    options.AccessDeniedPath = "/Account/AccessDenied";
+    options.Cookie.Name = "TeachingAI1.Auth";
+    options.Cookie.HttpOnly = true;
+    options.ExpireTimeSpan = TimeSpan.FromDays(7);
+    options.SlidingExpiration = true;
 });
 
 var app = builder.Build();

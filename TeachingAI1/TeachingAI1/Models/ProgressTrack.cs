@@ -1,3 +1,7 @@
+using System.Collections.Generic;
+
+namespace TeachingAI1.Models
+{
 public class Progress
 {
     public int Id { get; set; }
@@ -9,4 +13,5 @@ public class Progress
     public Lesson Lesson { get; set; }
     public bool IsCompleted { get; set; }
     public DateTime CompletedAt { get; set; }
+}
 }
