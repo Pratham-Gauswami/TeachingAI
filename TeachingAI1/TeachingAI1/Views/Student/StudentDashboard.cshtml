@@ -1,0 +1,24 @@
+@{
+    ViewData["Title"] = "Student Dashboard";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Your Dashboard, Student!</h1>
+        <p>Here are your features:</p>
+        <ul>
+            <li><a href="@Url.Action("PersonalizedLearning", "Student")">Personalized Learning</a></li>
+            <li><a href="@Url.Action("TrackProgress", "Student")">Track Progress</a></li>
+            <li><a href="@Url.Action("InteractiveQuizzes", "Student")">Interactive Quizzes</a></li>
+        </ul>
+    </div>
+</body>
+</html> 

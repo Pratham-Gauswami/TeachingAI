@@ -1,0 +1,92 @@
+@{
+    ViewData["Title"] = "Student Features";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/account.css" />
+    <style>
+        body {
+            background: linear-gradient(to right, #a8e0ff, #f0f8ff); /* Light blue gradient for a playful theme */
+            font-family: Arial, sans-serif;
+        }
+        .features-container {
+            padding: 50px;
+            text-align: center;
+        }
+        .feature-card {
+            background: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin: 20px;
+            position: relative;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .feature-icon {
+            font-size: 60px;
+            color: #4CAF50; /* Green color for icons */
+        }
+        h1 {
+            color: #333;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2rem;
+            color: #555;
+        }
+        .btn-primary {
+            background: linear-gradient(45deg, #4CAF50, #81c784);
+            border: none;
+            transition: background 0.3s;
+        }
+        .btn-primary:hover {
+            background: linear-gradient(45deg, #388e3c, #66bb6a);
+        }
+    </style>
+</head>
+<body>
+    <div class="features-container">
+        <h1>Features for Students</h1>
+        <p>As a student, you can:</p>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <div class="feature-icon">📚</div>
+                    <h4>Personalized Learning</h4>
+                    <p>Access personalized learning tools tailored to your needs.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <div class="feature-icon">📈</div>
+                    <h4>Track Progress</h4>
+                    <p>Monitor your progress through courses and assessments.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <div class="feature-icon">📝</div>
+                    <h4>Interactive Quizzes</h4>
+                    <p>Engage with interactive quizzes to test your knowledge.</p>
+                </div>
+            </div>
+        </div>
+        <a href="@Url.Action("PersonalizedLearning", "Student")" class="btn btn-primary">Go to Personalized Learning</a>
+        <a href="@Url.Action("TrackProgress", "Student")" class="btn btn-primary">Go to Track Progress</a>
+        <a href="@Url.Action("InteractiveQuizzes", "Student")" class="btn btn-primary">Go to Interactive Quizzes</a>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 

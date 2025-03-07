@@ -1,0 +1,93 @@
+/* Ensure navbar stays at the top */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff; /* Background color for navbar */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    z-index: 1000;
+}
+
+
+/* General body style */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #6a98f0, #e6e9f0); /* Light gradient background */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Center and style the login page */
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+/* Style the login box */
+.login-box {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    padding: 30px;
+    width: 350px;
+    text-align: center;
+}
+
+/* Style the heading */
+.login-box h2 {
+    margin-bottom: 20px;
+    color: #333333;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Style the form inputs */
+.login-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Style the submit button */
+.login-box button {
+    background-color: #6a98f0; /* Blue gradient */
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.login-box button:hover {
+    background-color: #557bb8;
+}
+
+/* Style the labels */
+.login-box label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .login-box {
+        width: 90%; /* Adjust width for smaller screens */
+        padding: 20px;
+    }
+}

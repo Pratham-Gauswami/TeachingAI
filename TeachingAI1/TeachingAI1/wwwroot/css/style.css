@@ -1,0 +1,168 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Header Section */
+.dashboard-header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.dashboard-header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.dashboard-header .nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.dashboard-header .nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.dashboard-header .nav-links li a:hover {
+  text-decoration: underline;
+}
+
+/* Main Content */
+.dashboard-main {
+  padding: 2rem;
+}
+
+/* Dashboard Sections */
+.dashboard-section {
+  margin-bottom: 2rem;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #4CAF50;
+  display: inline-block;
+  padding-bottom: 0.25rem;
+}
+
+/* Lessons Section */
+.lessons-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.lesson-card {
+  background-color: #f1f1f1;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+}
+
+.lesson-card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.lesson-card button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.lesson-card button:hover {
+  background-color: #45a049;
+}
+
+/* Courses Section */
+.courses-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.course-card {
+  background-color: #f1f1f1;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  width: 100%;
+  max-width: 300px;
+}
+
+.progress-bar {
+  background-color: #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+  height: 10px;
+  margin: 0.5rem 0;
+}
+
+.progress-bar .progress {
+  background-color: #4CAF50;
+  height: 100%;
+  transition: width 0.3s ease-in-out;
+}
+
+/* Progress Section */
+.progress-tracking {
+  text-align: center;
+}
+
+.progress-tracking button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.progress-tracking button:hover {
+  background-color: #45a049;
+}
+
+/* Footer Section */
+.dashboard-footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-top: 2px solid #4CAF50;
+}
+
+.dashboard-footer a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+.dashboard-footer a:hover {
+  text-decoration: underline;
+}

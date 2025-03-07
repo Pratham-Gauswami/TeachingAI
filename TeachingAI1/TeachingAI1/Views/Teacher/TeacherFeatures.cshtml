@@ -1,0 +1,92 @@
+@{
+    ViewData["Title"] = "Teacher Features";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/account.css" />
+    <style>
+        body {
+            background: linear-gradient(to right, #e0eafc, #cfdef3); /* Soft blue gradient for a professional theme */
+            font-family: Arial, sans-serif;
+        }
+        .features-container {
+            padding: 50px;
+            text-align: center;
+        }
+        .feature-card {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin: 20px;
+            position: relative;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .feature-icon {
+            font-size: 60px;
+            color: #007bff; /* Blue color for icons */
+        }
+        h1 {
+            color: #333;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2rem;
+            color: #555;
+        }
+        .btn-primary {
+            background: linear-gradient(45deg, #007bff, #66b2ff);
+            border: none;
+            transition: background 0.3s;
+        }
+        .btn-primary:hover {
+            background: linear-gradient(45deg, #0056b3, #3399ff);
+        }
+    </style>
+</head>
+<body>
+    <div class="features-container">
+        <h1>Features for Teachers</h1>
+        <p>As a teacher, you can:</p>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <div class="feature-icon">📚</div>
+                    <h4>Course Management</h4>
+                    <p>Create and manage courses with ease.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <div class="feature-icon">📤</div>
+                    <h4>Upload Resources</h4>
+                    <p>Upload lessons and resources for your students.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h4>Monitor Progress</h4>
+                    <p>Track student progress and performance effectively.</p>
+                </div>
+            </div>
+        </div>
+        <a href="@Url.Action("CourseManagement", "Teacher")" class="btn btn-primary">Go to Course Management</a>
+        <a href="@Url.Action("UploadResources", "Teacher")" class="btn btn-primary">Go to Upload Resources</a>
+        <a href="@Url.Action("MonitorProgress", "Teacher")" class="btn btn-primary">Go to Monitor Progress</a>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 

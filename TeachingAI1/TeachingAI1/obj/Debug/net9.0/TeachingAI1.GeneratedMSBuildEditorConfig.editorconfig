@@ -1,0 +1,165 @@
+is_global = true
+build_property.TargetFramework = net9.0
+build_property.TargetFramework = net9.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = TeachingAI1
+build_property.RootNamespace = TeachingAI1
+build_property.ProjectDir = /Users/prathamgauswami/Desktop/SIDE PROJECTS/TeachingAI-main/TeachingAI1/TeachingAI1/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 9.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/prathamgauswami/Desktop/SIDE PROJECTS/TeachingAI-main/TeachingAI1/TeachingAI1
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 9.0
+build_property.EnableCodeStyleSeverity = 
+
+[/Users/prathamgauswami/Desktop/SIDE PROJECTS/TeachingAI-main/TeachingAI1/TeachingAI1/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9Mb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/prathamgauswami/Desktop/SIDE PROJECTS/TeachingAI-main/TeachingAI1/TeachingAI1/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9SZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/prathamgauswami/Desktop/SIDE PROJECTS/TeachingAI-main/TeachingAI1/TeachingAI1/Views/Admin/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vRGFzaGJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/prathamgauswami/Desktop/SIDE PROJECTS/TeachingAI-main/TeachingAI1/TeachingAI1/Views/Admin/Index1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vSW5kZXgxLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/prathamgauswami/Desktop/SIDE PROJECTS/TeachingAI-main/TeachingAI1/TeachingAI1/Views/Admin/Settings.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vU2V0dGluZ3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/prathamgauswami/Desktop/SIDE PROJECTS/TeachingAI-main/TeachingAI1/TeachingAI1/Views/Dashboard/Courses.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGFzaGJvYXJkL0NvdXJzZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/prathamgauswami/Desktop/SIDE PROJECTS/TeachingAI-main/TeachingAI1/TeachingAI1/Views/Dashboard/Lessons.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGFzaGJvYXJkL0xlc3NvbnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/prathamgauswami/Desktop/SIDE PROJECTS/TeachingAI-main/TeachingAI1/TeachingAI1/Views/Dashboard/ProgressTracking.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGFzaGJvYXJkL1Byb2dyZXNzVHJhY2tpbmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/prathamgauswami/Desktop/SIDE PROJECTS/TeachingAI-main/TeachingAI1/TeachingAI1/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/prathamgauswami/Desktop/SIDE PROJECTS/TeachingAI-main/TeachingAI1/TeachingAI1/Views/Home/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9TZWFyY2guY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/prathamgauswami/Desktop/SIDE PROJECTS/TeachingAI-main/TeachingAI1/TeachingAI1/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/prathamgauswami/Desktop/SIDE PROJECTS/TeachingAI-main/TeachingAI1/TeachingAI1/Views/Shared/_AccountLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19BY2NvdW50TGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/prathamgauswami/Desktop/SIDE PROJECTS/TeachingAI-main/TeachingAI1/TeachingAI1/Views/Shared/_AdminLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19BZG1pbkxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/prathamgauswami/Desktop/SIDE PROJECTS/TeachingAI-main/TeachingAI1/TeachingAI1/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/prathamgauswami/Desktop/SIDE PROJECTS/TeachingAI-main/TeachingAI1/TeachingAI1/Views/Shared/_StudentLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19TdHVkZW50TGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/prathamgauswami/Desktop/SIDE PROJECTS/TeachingAI-main/TeachingAI1/TeachingAI1/Views/Shared/_TeacherLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19UZWFjaGVyTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/prathamgauswami/Desktop/SIDE PROJECTS/TeachingAI-main/TeachingAI1/TeachingAI1/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/prathamgauswami/Desktop/SIDE PROJECTS/TeachingAI-main/TeachingAI1/TeachingAI1/Views/Student/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU3R1ZGVudC9EYXNoYm9hcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/prathamgauswami/Desktop/SIDE PROJECTS/TeachingAI-main/TeachingAI1/TeachingAI1/Views/Student/Index1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU3R1ZGVudC9JbmRleDEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/prathamgauswami/Desktop/SIDE PROJECTS/TeachingAI-main/TeachingAI1/TeachingAI1/Views/Student/InteractiveQuizzes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU3R1ZGVudC9JbnRlcmFjdGl2ZVF1aXp6ZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/prathamgauswami/Desktop/SIDE PROJECTS/TeachingAI-main/TeachingAI1/TeachingAI1/Views/Student/PersonalizedLearning.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU3R1ZGVudC9QZXJzb25hbGl6ZWRMZWFybmluZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/prathamgauswami/Desktop/SIDE PROJECTS/TeachingAI-main/TeachingAI1/TeachingAI1/Views/Student/StudentDashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU3R1ZGVudC9TdHVkZW50RGFzaGJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/prathamgauswami/Desktop/SIDE PROJECTS/TeachingAI-main/TeachingAI1/TeachingAI1/Views/Student/StudentFeatures.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU3R1ZGVudC9TdHVkZW50RmVhdHVyZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/prathamgauswami/Desktop/SIDE PROJECTS/TeachingAI-main/TeachingAI1/TeachingAI1/Views/Student/TrackProgress.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU3R1ZGVudC9UcmFja1Byb2dyZXNzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/prathamgauswami/Desktop/SIDE PROJECTS/TeachingAI-main/TeachingAI1/TeachingAI1/Views/Teacher/CourseManagement.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVGVhY2hlci9Db3Vyc2VNYW5hZ2VtZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/prathamgauswami/Desktop/SIDE PROJECTS/TeachingAI-main/TeachingAI1/TeachingAI1/Views/Teacher/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVGVhY2hlci9EYXNoYm9hcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/prathamgauswami/Desktop/SIDE PROJECTS/TeachingAI-main/TeachingAI1/TeachingAI1/Views/Teacher/Index1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVGVhY2hlci9JbmRleDEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/prathamgauswami/Desktop/SIDE PROJECTS/TeachingAI-main/TeachingAI1/TeachingAI1/Views/Teacher/MonitorProgress.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVGVhY2hlci9Nb25pdG9yUHJvZ3Jlc3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/prathamgauswami/Desktop/SIDE PROJECTS/TeachingAI-main/TeachingAI1/TeachingAI1/Views/Teacher/TeacherDashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVGVhY2hlci9UZWFjaGVyRGFzaGJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/prathamgauswami/Desktop/SIDE PROJECTS/TeachingAI-main/TeachingAI1/TeachingAI1/Views/Teacher/TeacherFeatures.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVGVhY2hlci9UZWFjaGVyRmVhdHVyZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/prathamgauswami/Desktop/SIDE PROJECTS/TeachingAI-main/TeachingAI1/TeachingAI1/Views/Teacher/UploadResources.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVGVhY2hlci9VcGxvYWRSZXNvdXJjZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/prathamgauswami/Desktop/SIDE PROJECTS/TeachingAI-main/TeachingAI1/TeachingAI1/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/prathamgauswami/Desktop/SIDE PROJECTS/TeachingAI-main/TeachingAI1/TeachingAI1/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/prathamgauswami/Desktop/SIDE PROJECTS/TeachingAI-main/TeachingAI1/TeachingAI1/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-58in8mb9mm
