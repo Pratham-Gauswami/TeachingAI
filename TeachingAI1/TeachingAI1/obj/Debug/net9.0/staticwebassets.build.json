@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Kt4YaPr8JGWIWr68DyBDaFAu8MppZSuJKnPaKMhnVcc=",
+  "Hash": "cRxkuxV184pXuZKnA6XUccJQYT6kaBUCvxTjTjDl/BM=",
   "Source": "TeachingAI1",
   "BasePath": "_content/TeachingAI1",
   "Mode": "Default",
@@ -204,6 +204,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Identity": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/obj/Debug/net9.0/compressed/4gbm2goro4-qn352auryk.gz",
+      "SourceId": "TeachingAI1",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/TeachingAI1",
+      "RelativePath": "css/main#[.{fingerprint=qn352auryk}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/css/main.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "imhb92swjy",
+      "Integrity": "BiGTSbDjvMv6csmpzVFxy8/fxJXfrIStpJNcZzk8KRM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/css/main.css"
     },
     {
       "Identity": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/obj/Debug/net9.0/compressed/4hetny3q44-06098lyss8.gz",
@@ -1571,12 +1592,12 @@
       "OriginalItemSpec": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/lib/jquery-validation/LICENSE.md"
     },
     {
-      "Identity": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/obj/Debug/net9.0/compressed/tk5v6npxy4-afm8kprkn2.gz",
+      "Identity": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/obj/Debug/net9.0/compressed/tk5v6npxy4-7mnt3mwzwu.gz",
       "SourceId": "TeachingAI1",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/TeachingAI1",
-      "RelativePath": "css/style#[.{fingerprint=afm8kprkn2}]?.css.gz",
+      "RelativePath": "css/style#[.{fingerprint=7mnt3mwzwu}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -1585,8 +1606,8 @@
       "RelatedAsset": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/css/style.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "fe42i1x733",
-      "Integrity": "ObfyqvlOWAGLjjlNeXay+6eHoc8GNKf7syo4gLbySIw=",
+      "Fingerprint": "ysio9d71ww",
+      "Integrity": "zt1l/CRb4b67GbStHezlvU43Fdm4SuJS6xrCtBGLuDI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/css/style.css"
@@ -2054,6 +2075,27 @@
       "OriginalItemSpec": "wwwroot/css/login.css"
     },
     {
+      "Identity": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/css/main.css",
+      "SourceId": "TeachingAI1",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/",
+      "BasePath": "_content/TeachingAI1",
+      "RelativePath": "css/main#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qn352auryk",
+      "Integrity": "OhTY0pPD6xm3Ne+KubjovgP4xxOB+0OUwRVIHNtAdsU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/main.css"
+    },
+    {
       "Identity": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/css/site.css",
       "SourceId": "TeachingAI1",
       "SourceType": "Discovered",
@@ -2089,8 +2131,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "afm8kprkn2",
-      "Integrity": "epRsmZY3tm7KhYTGHAnxdFy2Ru8mpsi97HVZ5y4G+m0=",
+      "Fingerprint": "7mnt3mwzwu",
+      "Integrity": "z9dYWvXoz/tNgOIpJU8g9aRJOlp6HNdrwnwWvgA+iTo=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/style.css"
@@ -5624,6 +5666,48 @@
       "OriginalItemSpec": "wwwroot/scss/common/variables.scss"
     },
     {
+      "Identity": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/scss/layouts/_mixins.scss",
+      "SourceId": "TeachingAI1",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/",
+      "BasePath": "_content/TeachingAI1",
+      "RelativePath": "scss/layouts/_mixins#[.{fingerprint}]?.scss",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5hb8k33jfc",
+      "Integrity": "56P+0MqKuXGV1ooRDJjWML+ksYOFlxKHELHTNYrPR6A=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/scss/layouts/_mixins.scss"
+    },
+    {
+      "Identity": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/scss/layouts/_variables.scss",
+      "SourceId": "TeachingAI1",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/",
+      "BasePath": "_content/TeachingAI1",
+      "RelativePath": "scss/layouts/_variables#[.{fingerprint}]?.scss",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "jr2i41cnkg",
+      "Integrity": "f4ZeGsYK73Ru09ctuI+SJCLjwe+yBlhY968uKs9JaMY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/scss/layouts/_variables.scss"
+    },
+    {
       "Identity": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/scss/layouts/main.scss",
       "SourceId": "TeachingAI1",
       "SourceType": "Discovered",
@@ -5638,8 +5722,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "ktfa2gx6il",
-      "Integrity": "mIBhjMxxsxIk/M91CmY2Uvcgyn+OqVAYD5lyBkvrRVk=",
+      "Fingerprint": "jg751q3l17",
+      "Integrity": "A25HAZ6AcjQtOMDxi9Ty1YmVQM7neC2fGvBFdYXAMq8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/scss/layouts/main.scss"
@@ -6327,6 +6411,304 @@
       ]
     },
     {
+      "Route": "css/main.css",
+      "AssetFile": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/obj/Debug/net9.0/compressed/4gbm2goro4-qn352auryk.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.002832861190"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "352"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BiGTSbDjvMv6csmpzVFxy8/fxJXfrIStpJNcZzk8KRM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 01:07:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"OhTY0pPD6xm3Ne+KubjovgP4xxOB+0OUwRVIHNtAdsU=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-OhTY0pPD6xm3Ne+KubjovgP4xxOB+0OUwRVIHNtAdsU="
+        }
+      ]
+    },
+    {
+      "Route": "css/main.css",
+      "AssetFile": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/css/main.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "673"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OhTY0pPD6xm3Ne+KubjovgP4xxOB+0OUwRVIHNtAdsU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 01:07:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-OhTY0pPD6xm3Ne+KubjovgP4xxOB+0OUwRVIHNtAdsU="
+        }
+      ]
+    },
+    {
+      "Route": "css/main.css.gz",
+      "AssetFile": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/obj/Debug/net9.0/compressed/4gbm2goro4-qn352auryk.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "352"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BiGTSbDjvMv6csmpzVFxy8/fxJXfrIStpJNcZzk8KRM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 01:07:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-BiGTSbDjvMv6csmpzVFxy8/fxJXfrIStpJNcZzk8KRM="
+        }
+      ]
+    },
+    {
+      "Route": "css/main.qn352auryk.css",
+      "AssetFile": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/obj/Debug/net9.0/compressed/4gbm2goro4-qn352auryk.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.002832861190"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "352"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BiGTSbDjvMv6csmpzVFxy8/fxJXfrIStpJNcZzk8KRM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 01:07:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"OhTY0pPD6xm3Ne+KubjovgP4xxOB+0OUwRVIHNtAdsU=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qn352auryk"
+        },
+        {
+          "Name": "label",
+          "Value": "css/main.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OhTY0pPD6xm3Ne+KubjovgP4xxOB+0OUwRVIHNtAdsU="
+        }
+      ]
+    },
+    {
+      "Route": "css/main.qn352auryk.css",
+      "AssetFile": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/css/main.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "673"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OhTY0pPD6xm3Ne+KubjovgP4xxOB+0OUwRVIHNtAdsU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 01:07:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qn352auryk"
+        },
+        {
+          "Name": "label",
+          "Value": "css/main.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OhTY0pPD6xm3Ne+KubjovgP4xxOB+0OUwRVIHNtAdsU="
+        }
+      ]
+    },
+    {
+      "Route": "css/main.qn352auryk.css.gz",
+      "AssetFile": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/obj/Debug/net9.0/compressed/4gbm2goro4-qn352auryk.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "352"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BiGTSbDjvMv6csmpzVFxy8/fxJXfrIStpJNcZzk8KRM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 01:07:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qn352auryk"
+        },
+        {
+          "Name": "label",
+          "Value": "css/main.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-BiGTSbDjvMv6csmpzVFxy8/fxJXfrIStpJNcZzk8KRM="
+        }
+      ]
+    },
+    {
       "Route": "css/site.b9sayid5wm.css",
       "AssetFile": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/obj/Debug/net9.0/compressed/q4bi0k7dc6-b9sayid5wm.gz",
       "Selectors": [
@@ -6351,7 +6733,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 29 Nov 2024 02:02:24 GMT"
+          "Value": "Tue, 14 Jan 2025 22:18:53 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6412,7 +6794,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 29 Nov 2024 02:02:24 GMT"
+          "Value": "Tue, 14 Jan 2025 22:18:53 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6457,7 +6839,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 29 Nov 2024 02:02:24 GMT"
+          "Value": "Tue, 14 Jan 2025 22:18:53 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6512,7 +6894,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 29 Nov 2024 02:02:24 GMT"
+          "Value": "Tue, 14 Jan 2025 22:18:53 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6565,7 +6947,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 29 Nov 2024 02:02:24 GMT"
+          "Value": "Tue, 14 Jan 2025 22:18:53 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6602,7 +6984,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 29 Nov 2024 02:02:24 GMT"
+          "Value": "Tue, 14 Jan 2025 22:18:53 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6625,13 +7007,13 @@
       ]
     },
     {
-      "Route": "css/style.afm8kprkn2.css",
-      "AssetFile": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/obj/Debug/net9.0/compressed/tk5v6npxy4-afm8kprkn2.gz",
+      "Route": "css/style.7mnt3mwzwu.css",
+      "AssetFile": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/obj/Debug/net9.0/compressed/tk5v6npxy4-7mnt3mwzwu.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001250000000"
+          "Quality": "0.000738552437"
         }
       ],
       "ResponseHeaders": [
@@ -6641,15 +7023,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "799"
+          "Value": "1353"
         },
         {
           "Name": "ETag",
-          "Value": "\"ObfyqvlOWAGLjjlNeXay+6eHoc8GNKf7syo4gLbySIw=\""
+          "Value": "\"zt1l/CRb4b67GbStHezlvU43Fdm4SuJS6xrCtBGLuDI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 27 Dec 2024 19:37:10 GMT"
+          "Value": "Sat, 08 Mar 2025 01:09:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6669,13 +7051,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"epRsmZY3tm7KhYTGHAnxdFy2Ru8mpsi97HVZ5y4G+m0=\""
+          "Value": "W/\"z9dYWvXoz/tNgOIpJU8g9aRJOlp6HNdrwnwWvgA+iTo=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "afm8kprkn2"
+          "Value": "7mnt3mwzwu"
         },
         {
           "Name": "label",
@@ -6683,12 +7065,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-epRsmZY3tm7KhYTGHAnxdFy2Ru8mpsi97HVZ5y4G+m0="
+          "Value": "sha256-z9dYWvXoz/tNgOIpJU8g9aRJOlp6HNdrwnwWvgA+iTo="
         }
       ]
     },
     {
-      "Route": "css/style.afm8kprkn2.css",
+      "Route": "css/style.7mnt3mwzwu.css",
       "AssetFile": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/css/style.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -6698,7 +7080,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2860"
+          "Value": "4331"
         },
         {
           "Name": "Content-Type",
@@ -6706,11 +7088,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"epRsmZY3tm7KhYTGHAnxdFy2Ru8mpsi97HVZ5y4G+m0=\""
+          "Value": "\"z9dYWvXoz/tNgOIpJU8g9aRJOlp6HNdrwnwWvgA+iTo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 27 Dec 2024 19:37:10 GMT"
+          "Value": "Sat, 08 Mar 2025 01:09:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6720,7 +7102,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "afm8kprkn2"
+          "Value": "7mnt3mwzwu"
         },
         {
           "Name": "label",
@@ -6728,13 +7110,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-epRsmZY3tm7KhYTGHAnxdFy2Ru8mpsi97HVZ5y4G+m0="
+          "Value": "sha256-z9dYWvXoz/tNgOIpJU8g9aRJOlp6HNdrwnwWvgA+iTo="
         }
       ]
     },
     {
-      "Route": "css/style.afm8kprkn2.css.gz",
-      "AssetFile": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/obj/Debug/net9.0/compressed/tk5v6npxy4-afm8kprkn2.gz",
+      "Route": "css/style.7mnt3mwzwu.css.gz",
+      "AssetFile": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/obj/Debug/net9.0/compressed/tk5v6npxy4-7mnt3mwzwu.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6743,7 +7125,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "799"
+          "Value": "1353"
         },
         {
           "Name": "Content-Type",
@@ -6751,11 +7133,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ObfyqvlOWAGLjjlNeXay+6eHoc8GNKf7syo4gLbySIw=\""
+          "Value": "\"zt1l/CRb4b67GbStHezlvU43Fdm4SuJS6xrCtBGLuDI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 27 Dec 2024 19:37:10 GMT"
+          "Value": "Sat, 08 Mar 2025 01:09:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6773,7 +7155,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "afm8kprkn2"
+          "Value": "7mnt3mwzwu"
         },
         {
           "Name": "label",
@@ -6781,18 +7163,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-ObfyqvlOWAGLjjlNeXay+6eHoc8GNKf7syo4gLbySIw="
+          "Value": "sha256-zt1l/CRb4b67GbStHezlvU43Fdm4SuJS6xrCtBGLuDI="
         }
       ]
     },
     {
       "Route": "css/style.css",
-      "AssetFile": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/obj/Debug/net9.0/compressed/tk5v6npxy4-afm8kprkn2.gz",
+      "AssetFile": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/obj/Debug/net9.0/compressed/tk5v6npxy4-7mnt3mwzwu.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001250000000"
+          "Quality": "0.000738552437"
         }
       ],
       "ResponseHeaders": [
@@ -6802,15 +7184,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "799"
+          "Value": "1353"
         },
         {
           "Name": "ETag",
-          "Value": "\"ObfyqvlOWAGLjjlNeXay+6eHoc8GNKf7syo4gLbySIw=\""
+          "Value": "\"zt1l/CRb4b67GbStHezlvU43Fdm4SuJS6xrCtBGLuDI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 27 Dec 2024 19:37:10 GMT"
+          "Value": "Sat, 08 Mar 2025 01:09:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6830,13 +7212,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"epRsmZY3tm7KhYTGHAnxdFy2Ru8mpsi97HVZ5y4G+m0=\""
+          "Value": "W/\"z9dYWvXoz/tNgOIpJU8g9aRJOlp6HNdrwnwWvgA+iTo=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-epRsmZY3tm7KhYTGHAnxdFy2Ru8mpsi97HVZ5y4G+m0="
+          "Value": "sha256-z9dYWvXoz/tNgOIpJU8g9aRJOlp6HNdrwnwWvgA+iTo="
         }
       ]
     },
@@ -6851,7 +7233,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2860"
+          "Value": "4331"
         },
         {
           "Name": "Content-Type",
@@ -6859,11 +7241,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"epRsmZY3tm7KhYTGHAnxdFy2Ru8mpsi97HVZ5y4G+m0=\""
+          "Value": "\"z9dYWvXoz/tNgOIpJU8g9aRJOlp6HNdrwnwWvgA+iTo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 27 Dec 2024 19:37:10 GMT"
+          "Value": "Sat, 08 Mar 2025 01:09:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6873,13 +7255,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-epRsmZY3tm7KhYTGHAnxdFy2Ru8mpsi97HVZ5y4G+m0="
+          "Value": "sha256-z9dYWvXoz/tNgOIpJU8g9aRJOlp6HNdrwnwWvgA+iTo="
         }
       ]
     },
     {
       "Route": "css/style.css.gz",
-      "AssetFile": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/obj/Debug/net9.0/compressed/tk5v6npxy4-afm8kprkn2.gz",
+      "AssetFile": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/obj/Debug/net9.0/compressed/tk5v6npxy4-7mnt3mwzwu.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6888,7 +7270,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "799"
+          "Value": "1353"
         },
         {
           "Name": "Content-Type",
@@ -6896,11 +7278,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ObfyqvlOWAGLjjlNeXay+6eHoc8GNKf7syo4gLbySIw=\""
+          "Value": "\"zt1l/CRb4b67GbStHezlvU43Fdm4SuJS6xrCtBGLuDI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 27 Dec 2024 19:37:10 GMT"
+          "Value": "Sat, 08 Mar 2025 01:09:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6918,7 +7300,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-ObfyqvlOWAGLjjlNeXay+6eHoc8GNKf7syo4gLbySIw="
+          "Value": "sha256-zt1l/CRb4b67GbStHezlvU43Fdm4SuJS6xrCtBGLuDI="
         }
       ]
     },
@@ -39059,8 +39441,8 @@
       ]
     },
     {
-      "Route": "scss/layouts/main.ktfa2gx6il.scss",
-      "AssetFile": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/scss/layouts/main.scss",
+      "Route": "scss/layouts/_mixins.5hb8k33jfc.scss",
+      "AssetFile": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/scss/layouts/_mixins.scss",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -39069,7 +39451,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6092"
+          "Value": "304"
         },
         {
           "Name": "Content-Type",
@@ -39077,11 +39459,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"mIBhjMxxsxIk/M91CmY2Uvcgyn+OqVAYD5lyBkvrRVk=\""
+          "Value": "\"56P+0MqKuXGV1ooRDJjWML+ksYOFlxKHELHTNYrPR6A=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Sep 2018 02:59:18 GMT"
+          "Value": "Sat, 08 Mar 2025 00:13:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -39091,7 +39473,171 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "ktfa2gx6il"
+          "Value": "5hb8k33jfc"
+        },
+        {
+          "Name": "label",
+          "Value": "scss/layouts/_mixins.scss"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-56P+0MqKuXGV1ooRDJjWML+ksYOFlxKHELHTNYrPR6A="
+        }
+      ]
+    },
+    {
+      "Route": "scss/layouts/_mixins.scss",
+      "AssetFile": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/scss/layouts/_mixins.scss",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "304"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"56P+0MqKuXGV1ooRDJjWML+ksYOFlxKHELHTNYrPR6A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 00:13:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-56P+0MqKuXGV1ooRDJjWML+ksYOFlxKHELHTNYrPR6A="
+        }
+      ]
+    },
+    {
+      "Route": "scss/layouts/_variables.jr2i41cnkg.scss",
+      "AssetFile": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/scss/layouts/_variables.scss",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "160"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"f4ZeGsYK73Ru09ctuI+SJCLjwe+yBlhY968uKs9JaMY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 00:08:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jr2i41cnkg"
+        },
+        {
+          "Name": "label",
+          "Value": "scss/layouts/_variables.scss"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-f4ZeGsYK73Ru09ctuI+SJCLjwe+yBlhY968uKs9JaMY="
+        }
+      ]
+    },
+    {
+      "Route": "scss/layouts/_variables.scss",
+      "AssetFile": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/scss/layouts/_variables.scss",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "160"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"f4ZeGsYK73Ru09ctuI+SJCLjwe+yBlhY968uKs9JaMY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 00:08:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-f4ZeGsYK73Ru09ctuI+SJCLjwe+yBlhY968uKs9JaMY="
+        }
+      ]
+    },
+    {
+      "Route": "scss/layouts/main.jg751q3l17.scss",
+      "AssetFile": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/scss/layouts/main.scss",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7053"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"A25HAZ6AcjQtOMDxi9Ty1YmVQM7neC2fGvBFdYXAMq8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Mar 2025 01:07:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jg751q3l17"
         },
         {
           "Name": "label",
@@ -39099,7 +39645,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-mIBhjMxxsxIk/M91CmY2Uvcgyn+OqVAYD5lyBkvrRVk="
+          "Value": "sha256-A25HAZ6AcjQtOMDxi9Ty1YmVQM7neC2fGvBFdYXAMq8="
         }
       ]
     },
@@ -39114,7 +39660,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6092"
+          "Value": "7053"
         },
         {
           "Name": "Content-Type",
@@ -39122,11 +39668,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"mIBhjMxxsxIk/M91CmY2Uvcgyn+OqVAYD5lyBkvrRVk=\""
+          "Value": "\"A25HAZ6AcjQtOMDxi9Ty1YmVQM7neC2fGvBFdYXAMq8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 12 Sep 2018 02:59:18 GMT"
+          "Value": "Sat, 08 Mar 2025 01:07:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -39136,7 +39682,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-mIBhjMxxsxIk/M91CmY2Uvcgyn+OqVAYD5lyBkvrRVk="
+          "Value": "sha256-A25HAZ6AcjQtOMDxi9Ty1YmVQM7neC2fGvBFdYXAMq8="
         }
       ]
     },
@@ -39329,7 +39875,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 31 Dec 2024 01:47:57 GMT"
+          "Value": "Sat, 08 Mar 2025 01:10:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -39382,7 +39928,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 31 Dec 2024 01:47:57 GMT"
+          "Value": "Sat, 08 Mar 2025 01:10:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -39419,7 +39965,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 31 Dec 2024 01:47:57 GMT"
+          "Value": "Sat, 08 Mar 2025 01:10:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -39466,7 +40012,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 31 Dec 2024 01:47:57 GMT"
+          "Value": "Sat, 08 Mar 2025 01:10:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -39519,7 +40065,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 31 Dec 2024 01:47:57 GMT"
+          "Value": "Sat, 08 Mar 2025 01:10:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -39556,7 +40102,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 31 Dec 2024 01:47:57 GMT"
+          "Value": "Sat, 08 Mar 2025 01:10:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -39603,7 +40149,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 31 Dec 2024 01:47:57 GMT"
+          "Value": "Sat, 08 Mar 2025 01:10:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -39664,7 +40210,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 31 Dec 2024 01:47:57 GMT"
+          "Value": "Sat, 08 Mar 2025 01:10:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -39709,7 +40255,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 31 Dec 2024 01:47:57 GMT"
+          "Value": "Sat, 08 Mar 2025 01:10:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -39764,7 +40310,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 31 Dec 2024 01:47:57 GMT"
+          "Value": "Sat, 08 Mar 2025 01:10:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -39825,7 +40371,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 31 Dec 2024 01:47:57 GMT"
+          "Value": "Sat, 08 Mar 2025 01:10:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -39870,7 +40416,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 31 Dec 2024 01:47:57 GMT"
+          "Value": "Sat, 08 Mar 2025 01:10:58 GMT"
         },
         {
           "Name": "Cache-Control",

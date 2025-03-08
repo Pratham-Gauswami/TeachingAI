@@ -1,6 +1,33 @@
+@use "sass:color";
+@use "variables";
+@use "mixins";
+
 .signup {
     margin-bottom: 150px;
+    background: linear-gradient(135deg, #f0f4ff, #e6e9f0);
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+
+.form-submit {
+    display: inline-block;
+    background: variables.$blue-color; // Use the variable with the namespace
+    color: #fff;
+    border-bottom: none;
+    width: auto;
+    padding: 15px 39px;
+    @include mixins.border-radius(5px);
+    margin-top: 25px;
+    cursor: pointer;
+    &:hover {
+        background: color.adjust(variables.$blue-color, $lightness: -10%); // Updated
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+    }
+}
+
+// Other styles...
 .signup-content {
     @extend display-flex;
     padding: 75px 0;
@@ -25,16 +52,18 @@ figure {
 }
 .form-submit {
     display: inline-block;
-    background: $blue-color;
+    background: variables.$blue-color;
     color: #fff;
     border-bottom: none;
     width: auto;
     padding: 15px 39px;
-    @include border-radius(5px);
+    @include mixins.border-radius(5px);
     margin-top: 25px;
     cursor: pointer;
     &:hover {
-        background: darken($blue-color, 10%);
+        background: color.adjust(variables.$blue-color, $lightness: -10%);
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
     }
 }
 
@@ -73,14 +102,17 @@ input {
     width: 100%;
     display: block;
     border: none;
+    border-radius: 8px;
     border-bottom: 1px solid $grey-light;
-    padding: 6px 30px;
+    padding: 10px 15px;
     font-family: Poppins;
     box-sizing: border-box;
     @include input-placeholder($grey-light);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     &:focus {
         border-bottom: 1px solid $black-color;
         @include input-placeholder($black-color);
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     }
 }
 
@@ -112,7 +144,7 @@ input[type=checkbox]:not(old) + label > span{
   background-image :         linear-gradient(rgb(255,255,255),rgb(255,255,255 ));
   vertical-align   : bottom;
 }
-input[type=checkbox]:not(old):checked + label > span,{
+input[type=checkbox]:not(old):checked + label > span {
     background-image :    -moz-linear-gradient(rgb(255,255,255),rgb(255,255,255));
     background-image :     -ms-linear-gradient(rgb(255,255,255),rgb(255,255,255));
     background-image :      -o-linear-gradient(rgb(255,255,255),rgb(255,255,255));

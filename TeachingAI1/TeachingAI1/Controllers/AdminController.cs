@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using TeachingAI1.Data;
 using TeachingAI1.Models;
 using System.Linq;
+using Microsoft.AspNetCore.Authentication;
 
 namespace TeachingAI1.Controllers
 {
@@ -48,6 +49,14 @@ namespace TeachingAI1.Controllers
             .ToList();
             Console.WriteLine($"Number of users: {users.Count}");
             return View("Index1", users); //Pass data to the index1 view
+        }
+
+        [Authorize]
+        public IActionResult Logout()
+        {
+            // This will sign out the user
+            HttpContext.SignOutAsync();
+            return RedirectToAction("Index1"); // Redirect to the desired page after logout
         }
     }
 }

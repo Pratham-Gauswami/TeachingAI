@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets/css/login.css"
     },
     {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/css/main.css",
+      "PackagePath": "staticwebassets/css/main.css"
+    },
+    {
       "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/css/site.css",
       "PackagePath": "staticwebassets/css/site.css"
     },
@@ -691,6 +695,14 @@
     {
       "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/scss/common/variables.scss",
       "PackagePath": "staticwebassets/scss/common/variables.scss"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/scss/layouts/_mixins.scss",
+      "PackagePath": "staticwebassets/scss/layouts/_mixins.scss"
+    },
+    {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/scss/layouts/_variables.scss",
+      "PackagePath": "staticwebassets/scss/layouts/_variables.scss"
     },
     {
       "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/scss/layouts/main.scss",
