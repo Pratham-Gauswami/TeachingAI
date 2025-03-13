@@ -8,6 +8,8 @@
     --dark-color: #212529;
     --gradient-1: linear-gradient(135deg, #f72585 0%, #7209b7 100%);
     --gradient-2: linear-gradient(135deg, #4361ee 0%, #4cc9f0 100%);
+    --gradient-3: linear-gradient(135deg, #7209b7 0%, #3a0ca3 100%);
+    --gradient-4: linear-gradient(135deg, #4cc9f0 0%, #4361ee 100%);
     --box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     --box-shadow-hover: 0 15px 35px rgba(0, 0, 0, 0.2);
 }
