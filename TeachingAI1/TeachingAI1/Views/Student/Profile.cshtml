@@ -1,0 +1,343 @@
+@{
+    ViewData["Title"] = "My Profile";
+    Layout = "_StudentLayout";
+}
+
+<div class="container-fluid px-4 py-4">
+    <!-- Page Header -->
+    <div class="page-header row align-items-center mb-4">
+        <div class="col-md-6">
+            <h1 class="page-title">@ViewData["Title"]</h1>
+            <p class="page-subtitle">Manage your personal information and preferences</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+            <button class="btn btn-primary">
+                <i class="fas fa-save me-2"></i> Save Changes
+            </button>
+        </div>
+    </div>
+
+    <div class="row">
+        <!-- Profile Sidebar -->
+        <div class="col-lg-4 mb-4">
+            <!-- Profile Card -->
+            <div class="dashboard-card text-center mb-4">
+                <div class="profile-avatar-container mb-3">
+                    <img src="https://via.placeholder.com/150" alt="Profile Avatar" class="profile-avatar">
+                    <button class="profile-avatar-edit">
+                        <i class="fas fa-camera"></i>
+                    </button>
+                </div>
+                <h3 class="profile-name">John Doe</h3>
+                <p class="profile-role">Computer Science Student</p>
+                <div class="profile-stats">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="profile-stat-value">12</div>
+                            <div class="profile-stat-label">Courses</div>
+                        </div>
+                        <div class="col-4">
+                            <div class="profile-stat-value">3.8</div>
+                            <div class="profile-stat-label">GPA</div>
+                        </div>
+                        <div class="col-4">
+                            <div class="profile-stat-value">5</div>
+                            <div class="profile-stat-label">Certificates</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-actions mt-3">
+                    <button class="btn btn-outline-primary btn-sm me-2">
+                        <i class="fas fa-envelope me-1"></i> Message
+                    </button>
+                    <button class="btn btn-outline-secondary btn-sm">
+                        <i class="fas fa-share-alt me-1"></i> Share
+                    </button>
+                </div>
+            </div>
+
+            <!-- Achievements -->
+            <div class="dashboard-card">
+                <h3 class="section-title">Achievements</h3>
+                <div class="achievements-list">
+                    <div class="achievement-item">
+                        <div class="achievement-icon gold">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="achievement-content">
+                            <div class="achievement-title">Perfect Attendance</div>
+                            <div class="achievement-desc">Attended all classes for a semester</div>
+                        </div>
+                    </div>
+                    <div class="achievement-item">
+                        <div class="achievement-icon silver">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <div class="achievement-content">
+                            <div class="achievement-title">Dean's List</div>
+                            <div class="achievement-desc">Achieved GPA of 3.5 or higher</div>
+                        </div>
+                    </div>
+                    <div class="achievement-item">
+                        <div class="achievement-icon bronze">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <div class="achievement-content">
+                            <div class="achievement-title">First Project</div>
+                            <div class="achievement-desc">Completed first programming project</div>
+                        </div>
+                    </div>
+                    <div class="achievement-item">
+                        <div class="achievement-icon locked">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <div class="achievement-content">
+                            <div class="achievement-title">Research Excellence</div>
+                            <div class="achievement-desc">Complete a research paper with A grade</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Profile Content -->
+        <div class="col-lg-8">
+            <div class="dashboard-card mb-4">
+                <ul class="nav nav-tabs" id="profileTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="personal-tab" data-bs-toggle="tab" data-bs-target="#personal" type="button" role="tab" aria-controls="personal" aria-selected="true">Personal Info</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="academic-tab" data-bs-toggle="tab" data-bs-target="#academic" type="button" role="tab" aria-controls="academic" aria-selected="false">Academic</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="security-tab" data-bs-toggle="tab" data-bs-target="#security" type="button" role="tab" aria-controls="security" aria-selected="false">Security</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="notifications-tab" data-bs-toggle="tab" data-bs-target="#notifications" type="button" role="tab" aria-controls="notifications" aria-selected="false">Notifications</button>
+                    </li>
+                </ul>
+                <div class="tab-content p-3" id="profileTabsContent">
+                    <!-- Personal Info Tab -->
+                    <div class="tab-pane fade show active" id="personal" role="tabpanel" aria-labelledby="personal-tab">
+                        <form>
+                            <div class="row mb-3">
+                                <div class="col-md-6 mb-3 mb-md-0">
+                                    <label for="firstName" class="form-label">First Name</label>
+                                    <input type="text" class="form-control" id="firstName" value="John">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="lastName" class="form-label">Last Name</label>
+                                    <input type="text" class="form-control" id="lastName" value="Doe">
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" value="john.doe@example.com">
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Phone</label>
+                                <input type="tel" class="form-control" id="phone" value="(123) 456-7890">
+                            </div>
+                            <div class="mb-3">
+                                <label for="dob" class="form-label">Date of Birth</label>
+                                <input type="date" class="form-control" id="dob" value="1998-05-15">
+                            </div>
+                            <div class="mb-3">
+                                <label for="address" class="form-label">Address</label>
+                                <textarea class="form-control" id="address" rows="3">123 University Ave, College Town, CT 12345</textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="bio" class="form-label">Bio</label>
+                                <textarea class="form-control" id="bio" rows="4">Computer Science student with a passion for web development and artificial intelligence. Looking to expand my knowledge and skills in software engineering.</textarea>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <!-- Academic Tab -->
+                    <div class="tab-pane fade" id="academic" role="tabpanel" aria-labelledby="academic-tab">
+                        <div class="mb-4">
+                            <h4 class="mb-3">Program Information</h4>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Major</label>
+                                    <input type="text" class="form-control" value="Computer Science" readonly>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Minor</label>
+                                    <input type="text" class="form-control" value="Mathematics" readonly>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Academic Year</label>
+                                    <input type="text" class="form-control" value="Junior (3rd Year)" readonly>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Expected Graduation</label>
+                                    <input type="text" class="form-control" value="May 2025" readonly>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <h4 class="mb-3">Academic Advisor</h4>
+                            <div class="advisor-info d-flex align-items-center">
+                                <img src="https://via.placeholder.com/60" alt="Advisor" class="advisor-avatar me-3">
+                                <div>
+                                    <h5 class="mb-1">Dr. Sarah Johnson</h5>
+                                    <p class="mb-1">Department of Computer Science</p>
+                                    <p class="mb-0 text-muted">Office: Room 405, CS Building</p>
+                                    <p class="mb-0 text-muted">Email: s.johnson@university.edu</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h4 class="mb-3">Academic Interests</h4>
+                            <div class="mb-3">
+                                <label class="form-label">Areas of Interest</label>
+                                <select class="form-select" multiple>
+                                    <option selected>Artificial Intelligence</option>
+                                    <option selected>Web Development</option>
+                                    <option>Data Science</option>
+                                    <option>Cybersecurity</option>
+                                    <option>Mobile Development</option>
+                                    <option>Cloud Computing</option>
+                                </select>
+                                <div class="form-text">Select multiple areas that interest you</div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Career Goals</label>
+                                <textarea class="form-control" rows="3">To become a full-stack developer specializing in AI-powered web applications.</textarea>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Security Tab -->
+                    <div class="tab-pane fade" id="security" role="tabpanel" aria-labelledby="security-tab">
+                        <div class="mb-4">
+                            <h4 class="mb-3">Change Password</h4>
+                            <form>
+                                <div class="mb-3">
+                                    <label for="currentPassword" class="form-label">Current Password</label>
+                                    <input type="password" class="form-control" id="currentPassword">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="newPassword" class="form-label">New Password</label>
+                                    <input type="password" class="form-control" id="newPassword">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="confirmPassword" class="form-label">Confirm New Password</label>
+                                    <input type="password" class="form-control" id="confirmPassword">
+                                </div>
+                                <button type="button" class="btn btn-primary">Update Password</button>
+                            </form>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <h4 class="mb-3">Two-Factor Authentication</h4>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="twoFactorAuth">
+                                <label class="form-check-label" for="twoFactorAuth">Enable Two-Factor Authentication</label>
+                            </div>
+                            <p class="text-muted">Add an extra layer of security to your account by requiring both your password and a verification code.</p>
+                            <button type="button" class="btn btn-outline-primary">Set Up Two-Factor</button>
+                        </div>
+                        
+                        <div>
+                            <h4 class="mb-3">Login Sessions</h4>
+                            <div class="session-item d-flex justify-content-between align-items-center mb-3 p-3 border rounded">
+                                <div>
+                                    <div class="d-flex align-items-center">
+                                        <i class="fas fa-laptop me-2"></i>
+                                        <strong>MacBook Pro - Chrome</strong>
+                                    </div>
+                                    <div class="text-muted small">Current Session • San Francisco, CA</div>
+                                </div>
+                                <span class="badge bg-success">Active</span>
+                            </div>
+                            <div class="session-item d-flex justify-content-between align-items-center mb-3 p-3 border rounded">
+                                <div>
+                                    <div class="d-flex align-items-center">
+                                        <i class="fas fa-mobile-alt me-2"></i>
+                                        <strong>iPhone 13 - Safari</strong>
+                                    </div>
+                                    <div class="text-muted small">Last active: 2 hours ago • San Francisco, CA</div>
+                                </div>
+                                <button class="btn btn-sm btn-outline-danger">Logout</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Notifications Tab -->
+                    <div class="tab-pane fade" id="notifications" role="tabpanel" aria-labelledby="notifications-tab">
+                        <h4 class="mb-3">Email Notifications</h4>
+                        <div class="mb-4">
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="emailAssignments" checked>
+                                <label class="form-check-label" for="emailAssignments">Assignment Reminders</label>
+                            </div>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="emailGrades" checked>
+                                <label class="form-check-label" for="emailGrades">Grade Updates</label>
+                            </div>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="emailAnnouncements" checked>
+                                <label class="form-check-label" for="emailAnnouncements">Course Announcements</label>
+                            </div>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="emailMessages">
+                                <label class="form-check-label" for="emailMessages">New Messages</label>
+                            </div>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="emailNewCourses">
+                                <label class="form-check-label" for="emailNewCourses">New Course Offerings</label>
+                            </div>
+                        </div>
+                        
+                        <h4 class="mb-3">Push Notifications</h4>
+                        <div class="mb-4">
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="pushAssignments" checked>
+                                <label class="form-check-label" for="pushAssignments">Assignment Due Soon</label>
+                            </div>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="pushGrades" checked>
+                                <label class="form-check-label" for="pushGrades">New Grades Posted</label>
+                            </div>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="pushMessages" checked>
+                                <label class="form-check-label" for="pushMessages">New Messages</label>
+                            </div>
+                        </div>
+                        
+                        <h4 class="mb-3">Notification Frequency</h4>
+                        <div class="mb-3">
+                            <select class="form-select">
+                                <option>Immediately</option>
+                                <option selected>Daily Digest</option>
+                                <option>Weekly Summary</option>
+                            </select>
+                            <div class="form-text">How often you want to receive notification summaries</div>
+                        </div>
+                        
+                        <button type="button" class="btn btn-primary">Save Preferences</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function() {
+            // Tab functionality is handled by Bootstrap
+            
+            // Profile image upload preview (placeholder)
+            $('.profile-avatar-edit').click(function() {
+                // Here you would add logic to open a file picker
+                alert('Image upload functionality would be implemented here');
+            });
+        });
+    </script>
+} 
