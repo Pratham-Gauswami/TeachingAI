@@ -1,0 +1,225 @@
+@{
+    ViewData["Title"] = "My Messages";
+    Layout = "_StudentLayout";
+}
+
+<div class="container-fluid px-4 py-4">
+    <!-- Page Header -->
+    <div class="page-header row align-items-center mb-4">
+        <div class="col-md-6">
+            <h1 class="page-title">@ViewData["Title"]</h1>
+            <p class="page-subtitle">Communicate with instructors and classmates</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+            <button class="btn btn-primary" id="newMessageBtn">
+                <i class="fas fa-plus me-2"></i> New Message
+            </button>
+        </div>
+    </div>
+
+    <div class="row">
+        <!-- Message Sidebar -->
+        <div class="col-lg-4 mb-4">
+            <div class="dashboard-card p-0 h-100">
+                <div class="message-search p-3 border-bottom">
+                    <div class="input-group">
+                        <span class="input-group-text bg-transparent border-end-0">
+                            <i class="fas fa-search"></i>
+                        </span>
+                        <input type="text" class="form-control border-start-0" placeholder="Search messages...">
+                    </div>
+                </div>
+                
+                <div class="message-filters p-3 border-bottom">
+                    <div class="btn-group w-100" role="group">
+                        <button type="button" class="btn btn-outline-primary active">All</button>
+                        <button type="button" class="btn btn-outline-primary">Instructors</button>
+                        <button type="button" class="btn btn-outline-primary">Students</button>
+                    </div>
+                </div>
+                
+                <div class="message-list">
+                    <div class="message-item active">
+                        <div class="message-avatar">
+                            <img src="https://via.placeholder.com/50" alt="Dr. Sarah Johnson">
+                            <span class="status-indicator online"></span>
+                        </div>
+                        <div class="message-content">
+                            <div class="message-header">
+                                <h6 class="message-name">Dr. Sarah Johnson</h6>
+                                <span class="message-time">10:30 AM</span>
+                            </div>
+                            <p class="message-preview">Thanks for submitting your project. I've reviewed it and...</p>
+                        </div>
+                    </div>
+                    <div class="message-item unread">
+                        <div class="message-avatar">
+                            <img src="https://via.placeholder.com/50" alt="Prof. Michael Chen">
+                            <span class="status-indicator offline"></span>
+                        </div>
+                        <div class="message-content">
+                            <div class="message-header">
+                                <h6 class="message-name">Prof. Michael Chen</h6>
+                                <span class="message-time">Yesterday</span>
+                            </div>
+                            <p class="message-preview">Don't forget about the quiz tomorrow. It will cover chapters 5-7...</p>
+                        </div>
+                    </div>
+                    <div class="message-item">
+                        <div class="message-avatar">
+                            <img src="https://via.placeholder.com/50" alt="Study Group">
+                            <span class="status-indicator"></span>
+                        </div>
+                        <div class="message-content">
+                            <div class="message-header">
+                                <h6 class="message-name">Data Structures Study Group</h6>
+                                <span class="message-time">Yesterday</span>
+                            </div>
+                            <p class="message-preview">Alex: Are we still meeting at the library tomorrow at 3pm?</p>
+                        </div>
+                    </div>
+                    <div class="message-item">
+                        <div class="message-avatar">
+                            <img src="https://via.placeholder.com/50" alt="Emma Wilson">
+                            <span class="status-indicator online"></span>
+                        </div>
+                        <div class="message-content">
+                            <div class="message-header">
+                                <h6 class="message-name">Emma Wilson</h6>
+                                <span class="message-time">2 days ago</span>
+                            </div>
+                            <p class="message-preview">Hey, did you understand the assignment for the AI class? I'm a bit confused...</p>
+                        </div>
+                    </div>
+                    <div class="message-item">
+                        <div class="message-avatar">
+                            <img src="https://via.placeholder.com/50" alt="Dr. Robert Lee">
+                            <span class="status-indicator offline"></span>
+                        </div>
+                        <div class="message-content">
+                            <div class="message-header">
+                                <h6 class="message-name">Dr. Robert Lee</h6>
+                                <span class="message-time">1 week ago</span>
+                            </div>
+                            <p class="message-preview">Your research proposal looks promising. Let's discuss it during office hours...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Message Content -->
+        <div class="col-lg-8">
+            <div class="dashboard-card p-0 h-100 d-flex flex-column">
+                <div class="message-header-bar p-3 border-bottom">
+                    <div class="d-flex align-items-center">
+                        <div class="message-avatar me-3">
+                            <img src="https://via.placeholder.com/50" alt="Dr. Sarah Johnson">
+                            <span class="status-indicator online"></span>
+                        </div>
+                        <div>
+                            <h5 class="mb-0">Dr. Sarah Johnson</h5>
+                            <p class="text-muted mb-0 small">Advanced Web Development • Online now</p>
+                        </div>
+                        <div class="ms-auto">
+                            <button class="btn btn-sm btn-outline-secondary me-2">
+                                <i class="fas fa-phone"></i>
+                            </button>
+                            <button class="btn btn-sm btn-outline-secondary me-2">
+                                <i class="fas fa-video"></i>
+                            </button>
+                            <button class="btn btn-sm btn-outline-secondary">
+                                <i class="fas fa-ellipsis-v"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="message-conversation p-3 flex-grow-1">
+                    <div class="conversation-date-divider">
+                        <span>Today</span>
+                    </div>
+                    
+                    <div class="message-bubble received">
+                        <div class="message-bubble-content">
+                            <p>Good morning John! I wanted to let you know that I've reviewed your final project submission.</p>
+                        </div>
+                        <div class="message-bubble-time">9:45 AM</div>
+                    </div>
+                    
+                    <div class="message-bubble received">
+                        <div class="message-bubble-content">
+                            <p>I'm impressed with your implementation of the responsive design and the use of modern JavaScript frameworks. Your code is well-structured and documented.</p>
+                        </div>
+                        <div class="message-bubble-time">9:47 AM</div>
+                    </div>
+                    
+                    <div class="message-bubble sent">
+                        <div class="message-bubble-content">
+                            <p>Thank you, Dr. Johnson! I spent a lot of time on making sure the responsive design worked well across all devices.</p>
+                        </div>
+                        <div class="message-bubble-time">10:15 AM</div>
+                    </div>
+                    
+                    <div class="message-bubble received">
+                        <div class="message-bubble-content">
+                            <p>It shows! I particularly liked the attention to detail with the animations and transitions. They enhance the user experience without being distracting.</p>
+                            <p>I've added some comments directly in the feedback section of the assignment. There are a few minor suggestions for improvement, but overall excellent work!</p>
+                        </div>
+                        <div class="message-bubble-time">10:30 AM</div>
+                    </div>
+                    
+                    <div class="message-bubble sent">
+                        <div class="message-bubble-content">
+                            <p>I'll check out the feedback right away. Is there anything specific you think I should focus on for future projects?</p>
+                        </div>
+                        <div class="message-bubble-time">10:32 AM</div>
+                    </div>
+                </div>
+                
+                <div class="message-input p-3 border-top">
+                    <form>
+                        <div class="input-group">
+                            <button class="btn btn-outline-secondary border-end-0" type="button">
+                                <i class="fas fa-paperclip"></i>
+                            </button>
+                            <input type="text" class="form-control border-start-0 border-end-0" placeholder="Type a message...">
+                            <button class="btn btn-primary" type="button">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function() {
+            // Message filter buttons
+            $('.message-filters .btn').click(function() {
+                $('.message-filters .btn').removeClass('active');
+                $(this).addClass('active');
+                
+                // Here you would add logic to filter messages
+            });
+            
+            // Message item click
+            $('.message-item').click(function() {
+                $('.message-item').removeClass('active');
+                $(this).addClass('active');
+                $(this).removeClass('unread');
+                
+                // Here you would add logic to load the conversation
+            });
+            
+            // New message button
+            $('#newMessageBtn').click(function() {
+                // Here you would add logic to open a new message modal
+                alert('New message functionality would be implemented here');
+            });
+        });
+    </script>
+} 

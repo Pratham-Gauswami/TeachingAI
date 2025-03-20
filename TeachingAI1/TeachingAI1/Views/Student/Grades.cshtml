@@ -1,0 +1,298 @@
+@{
+    ViewData["Title"] = "My Grades";
+    Layout = "_StudentLayout";
+}
+
+<div class="container-fluid px-4 py-4">
+    <!-- Page Header -->
+    <div class="page-header row align-items-center mb-4">
+        <div class="col-md-6">
+            <h1 class="page-title">@ViewData["Title"]</h1>
+            <p class="page-subtitle">View your academic performance and progress</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+            <div class="dropdown d-inline-block me-2">
+                <button class="btn btn-outline-primary dropdown-toggle" type="button" id="semesterDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    Fall 2023
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="semesterDropdown">
+                    <li><a class="dropdown-item active" href="#">Fall 2023</a></li>
+                    <li><a class="dropdown-item" href="#">Spring 2023</a></li>
+                    <li><a class="dropdown-item" href="#">Fall 2022</a></li>
+                </ul>
+            </div>
+            <button class="btn btn-primary">
+                <i class="fas fa-download me-2"></i> Export Transcript
+            </button>
+        </div>
+    </div>
+
+    <!-- GPA Overview -->
+    <div class="row mb-4">
+        <div class="col-lg-8">
+            <div class="dashboard-card">
+                <h3 class="section-title">GPA Overview</h3>
+                <div class="row">
+                    <div class="col-md-4 text-center mb-4 mb-md-0">
+                        <div class="gpa-circle">
+                            <div class="gpa-value">3.8</div>
+                            <div class="gpa-label">Current GPA</div>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="gpa-progress mb-4">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>Cumulative GPA</span>
+                                <span>3.75</span>
+                            </div>
+                            <div class="progress" style="height: 10px;">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 94%;" aria-valuenow="94" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="gpa-progress mb-4">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>Major GPA</span>
+                                <span>3.9</span>
+                            </div>
+                            <div class="progress" style="height: 10px;">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 97%;" aria-valuenow="97" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="gpa-progress">
+                            <div class="d-flex justify-content-between mb-1">
+                                <span>Previous Semester</span>
+                                <span>3.7</span>
+                            </div>
+                            <div class="progress" style="height: 10px;">
+                                <div class="progress-bar bg-info" role="progressbar" style="width: 92%;" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="dashboard-card h-100">
+                <h3 class="section-title">Grade Distribution</h3>
+                <div class="grade-distribution">
+                    <canvas id="gradeDistributionChart" height="200"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Current Semester Grades -->
+    <div class="dashboard-card mb-4">
+        <h3 class="section-title">Current Semester Grades</h3>
+        <div class="table-responsive">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Course</th>
+                        <th>Code</th>
+                        <th>Credits</th>
+                        <th>Instructor</th>
+                        <th>Grade</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="d-flex align-items-center">
+                                <div class="course-icon me-3 bg-primary text-white">
+                                    <i class="fas fa-laptop-code"></i>
+                                </div>
+                                <div>
+                                    <h6 class="mb-0">Advanced Web Development</h6>
+                                    <small class="text-muted">Required</small>
+                                </div>
+                            </div>
+                        </td>
+                        <td>CS 401</td>
+                        <td>4</td>
+                        <td>Dr. Sarah Johnson</td>
+                        <td>
+                            <div class="grade-pill a-grade">A</div>
+                        </td>
+                        <td>
+                            <button class="btn btn-sm btn-outline-primary">View Details</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="d-flex align-items-center">
+                                <div class="course-icon me-3 bg-info text-white">
+                                    <i class="fas fa-database"></i>
+                                </div>
+                                <div>
+                                    <h6 class="mb-0">Data Structures</h6>
+                                    <small class="text-muted">Required</small>
+                                </div>
+                            </div>
+                        </td>
+                        <td>CS 301</td>
+                        <td>3</td>
+                        <td>Prof. Michael Chen</td>
+                        <td>
+                            <div class="grade-pill b-grade">B+</div>
+                        </td>
+                        <td>
+                            <button class="btn btn-sm btn-outline-primary">View Details</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="d-flex align-items-center">
+                                <div class="course-icon me-3 bg-success text-white">
+                                    <i class="fas fa-brain"></i>
+                                </div>
+                                <div>
+                                    <h6 class="mb-0">Machine Learning Fundamentals</h6>
+                                    <small class="text-muted">Elective</small>
+                                </div>
+                            </div>
+                        </td>
+                        <td>CS 450</td>
+                        <td>4</td>
+                        <td>Dr. Robert Lee</td>
+                        <td>
+                            <div class="grade-pill a-grade">A-</div>
+                        </td>
+                        <td>
+                            <button class="btn btn-sm btn-outline-primary">View Details</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="d-flex align-items-center">
+                                <div class="course-icon me-3 bg-warning text-white">
+                                    <i class="fas fa-project-diagram"></i>
+                                </div>
+                                <div>
+                                    <h6 class="mb-0">Introduction to Algorithms</h6>
+                                    <small class="text-muted">Required</small>
+                                </div>
+                            </div>
+                        </td>
+                        <td>CS 320</td>
+                        <td>3</td>
+                        <td>Prof. Emily Rodriguez</td>
+                        <td>
+                            <div class="grade-pill b-grade">B</div>
+                        </td>
+                        <td>
+                            <button class="btn btn-sm btn-outline-primary">View Details</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="d-flex align-items-center">
+                                <div class="course-icon me-3 bg-danger text-white">
+                                    <i class="fas fa-atom"></i>
+                                </div>
+                                <div>
+                                    <h6 class="mb-0">Physics 101</h6>
+                                    <small class="text-muted">General Education</small>
+                                </div>
+                            </div>
+                        </td>
+                        <td>PHY 101</td>
+                        <td>4</td>
+                        <td>Dr. James Wilson</td>
+                        <td>
+                            <div class="grade-pill a-grade">A</div>
+                        </td>
+                        <td>
+                            <button class="btn btn-sm btn-outline-primary">View Details</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Grade History -->
+    <div class="dashboard-card">
+        <h3 class="section-title">Grade History</h3>
+        <div class="grade-history-chart">
+            <canvas id="gradeHistoryChart" height="100"></canvas>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Grade Distribution Chart
+            const gradeDistributionCtx = document.getElementById('gradeDistributionChart').getContext('2d');
+            const gradeDistributionChart = new Chart(gradeDistributionCtx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['A', 'B', 'C', 'D', 'F'],
+                    datasets: [{
+                        data: [65, 20, 10, 5, 0],
+                        backgroundColor: [
+                            '#28a745', // A - Green
+                            '#17a2b8', // B - Blue
+                            '#ffc107', // C - Yellow
+                            '#fd7e14', // D - Orange
+                            '#dc3545'  // F - Red
+                        ],
+                        borderWidth: 0
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'right',
+                            labels: {
+                                boxWidth: 15,
+                                padding: 15
+                            }
+                        }
+                    },
+                    cutout: '70%'
+                }
+            });
+
+            // Grade History Chart
+            const gradeHistoryCtx = document.getElementById('gradeHistoryChart').getContext('2d');
+            const gradeHistoryChart = new Chart(gradeHistoryCtx, {
+                type: 'line',
+                data: {
+                    labels: ['Fall 2021', 'Spring 2022', 'Fall 2022', 'Spring 2023', 'Fall 2023'],
+                    datasets: [{
+                        label: 'GPA',
+                        data: [3.5, 3.6, 3.7, 3.7, 3.8],
+                        borderColor: 'rgba(var(--primary-rgb), 1)',
+                        backgroundColor: 'rgba(var(--primary-rgb), 0.1)',
+                        tension: 0.4,
+                        fill: true
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            min: 2.0,
+                            max: 4.0,
+                            ticks: {
+                                stepSize: 0.5
+                            }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            display: false
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+} 

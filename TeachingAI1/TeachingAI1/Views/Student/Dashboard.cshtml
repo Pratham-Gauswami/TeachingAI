@@ -1,0 +1,438 @@
+﻿@{
+    ViewData["Title"] = "Student Dashboard";
+    Layout = "_StudentLayout";
+}
+
+<!-- Welcome Section -->
+<div class="dashboard-welcome mb-4">
+    <div class="row align-items-center">
+        <div class="col-md-8">
+            <h1 class="welcome-title">Welcome back, <span class="text-primary">@User.Identity.Name</span></h1>
+            <p class="welcome-subtitle">Track your progress and continue your learning journey</p>
+        </div>
+        <div class="col-md-4 text-md-end">
+            <a href="#" class="btn btn-primary"><i class="fas fa-graduation-cap me-2"></i>Browse Courses</a>
+        </div>
+    </div>
+</div>
+
+<!-- Stats Overview -->
+<div class="row mb-4">
+    <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
+        <div class="dashboard-card">
+            <div class="icon" style="background: var(--gradient-1);">
+                <i class="fas fa-book-open"></i>
+            </div>
+            <h3>4</h3>
+            <p>Active Courses</p>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
+        <div class="dashboard-card">
+            <div class="icon" style="background: var(--gradient-2);">
+                <i class="fas fa-tasks"></i>
+            </div>
+            <h3>8</h3>
+            <p>Assignments</p>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
+        <div class="dashboard-card">
+            <div class="icon" style="background: var(--gradient-3);">
+                <i class="fas fa-clock"></i>
+            </div>
+            <h3>24h</h3>
+            <p>Learning Time</p>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 45%;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+        <div class="dashboard-card">
+            <div class="icon" style="background: var(--gradient-4);">
+                <i class="fas fa-certificate"></i>
+            </div>
+            <h3>2</h3>
+            <p>Certificates</p>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Main Dashboard Content -->
+<div class="row">
+    <!-- Left Column -->
+    <div class="col-lg-8">
+        <!-- Continue Learning -->
+        <div class="dashboard-section mb-4">
+            <div class="section-header d-flex justify-content-between align-items-center mb-4">
+                <h2 class="section-title">Continue Learning</h2>
+                <a href="#" class="btn btn-sm btn-outline-primary">View All Courses</a>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="course-card">
+                        <div class="course-image">
+                            <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="AI Fundamentals">
+                            <div class="course-badge">In Progress</div>
+                        </div>
+                        <div class="course-content">
+                            <h3 class="course-title">AI Fundamentals</h3>
+                            <p class="course-instructor"><i class="fas fa-user-tie me-2"></i>Dr. John Smith</p>
+                            <div class="progress-container">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span>Progress</span>
+                                    <span>75%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <span class="course-meta"><i class="fas fa-book me-1"></i> 12 Lessons</span>
+                                <span class="course-meta"><i class="fas fa-clock me-1"></i> 6h left</span>
+                            </div>
+                            <a href="#" class="btn btn-primary btn-sm w-100 mt-3">Continue Learning</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="course-card">
+                        <div class="course-image">
+                            <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Machine Learning Basics">
+                            <div class="course-badge">In Progress</div>
+                        </div>
+                        <div class="course-content">
+                            <h3 class="course-title">Machine Learning Basics</h3>
+                            <p class="course-instructor"><i class="fas fa-user-tie me-2"></i>Dr. Emily Rodriguez</p>
+                            <div class="progress-container">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span>Progress</span>
+                                    <span>45%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 45%;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <span class="course-meta"><i class="fas fa-book me-1"></i> 16 Lessons</span>
+                                <span class="course-meta"><i class="fas fa-clock me-1"></i> 12h left</span>
+                            </div>
+                            <a href="#" class="btn btn-primary btn-sm w-100 mt-3">Continue Learning</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Upcoming Assignments -->
+        <div class="dashboard-section mb-4">
+            <div class="section-header d-flex justify-content-between align-items-center mb-4">
+                <h2 class="section-title">Upcoming Assignments</h2>
+                <a href="#" class="btn btn-sm btn-outline-primary">View All</a>
+            </div>
+            <div class="assignment-list">
+                <div class="assignment-card">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h3 class="assignment-title">AI Ethics Case Study</h3>
+                        <span class="badge bg-warning">Due Tomorrow</span>
+                    </div>
+                    <p class="assignment-course"><i class="fas fa-book-open me-2"></i>AI Fundamentals</p>
+                    <p class="assignment-due"><i class="far fa-calendar-alt me-2"></i>Due: May 15, 2023</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="assignment-meta">
+                            <span><i class="fas fa-file-alt me-1"></i> Essay</span>
+                            <span class="ms-3"><i class="fas fa-clock me-1"></i> Est. 2 hours</span>
+                        </div>
+                        <a href="#" class="btn btn-sm btn-primary">Start Assignment</a>
+                    </div>
+                </div>
+                <div class="assignment-card overdue">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h3 class="assignment-title">Data Visualization Project</h3>
+                        <span class="badge bg-danger">Overdue</span>
+                    </div>
+                    <p class="assignment-course"><i class="fas fa-book-open me-2"></i>Machine Learning Basics</p>
+                    <p class="assignment-due overdue"><i class="far fa-calendar-alt me-2"></i>Due: May 10, 2023</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="assignment-meta">
+                            <span><i class="fas fa-project-diagram me-1"></i> Project</span>
+                            <span class="ms-3"><i class="fas fa-clock me-1"></i> Est. 4 hours</span>
+                        </div>
+                        <a href="#" class="btn btn-sm btn-danger">Submit Now</a>
+                    </div>
+                </div>
+                <div class="assignment-card">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h3 class="assignment-title">Neural Networks Quiz</h3>
+                        <span class="badge bg-info">Due in 3 days</span>
+                    </div>
+                    <p class="assignment-course"><i class="fas fa-book-open me-2"></i>Machine Learning Basics</p>
+                    <p class="assignment-due"><i class="far fa-calendar-alt me-2"></i>Due: May 18, 2023</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="assignment-meta">
+                            <span><i class="fas fa-question-circle me-1"></i> Quiz</span>
+                            <span class="ms-3"><i class="fas fa-clock me-1"></i> Est. 1 hour</span>
+                        </div>
+                        <a href="#" class="btn btn-sm btn-outline-primary">Prepare</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Learning Progress -->
+        <div class="dashboard-section mb-4">
+            <div class="section-header d-flex justify-content-between align-items-center mb-4">
+                <h2 class="section-title">Learning Progress</h2>
+                <div class="dropdown">
+                    <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" id="progressDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        Last 30 Days
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="progressDropdown">
+                        <li><a class="dropdown-item" href="#">Last 7 Days</a></li>
+                        <li><a class="dropdown-item" href="#">Last 30 Days</a></li>
+                        <li><a class="dropdown-item" href="#">Last 90 Days</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="chart-container">
+                <canvas id="learningProgressChart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="col-lg-4">
+        <!-- Student Profile Card -->
+        <div class="profile-card mb-4">
+            <div class="profile-header">
+                <div class="profile-avatar">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Student Profile">
+                </div>
+                <div class="profile-info">
+                    <h3>@User.Identity.Name</h3>
+                    <p>AI & Machine Learning Student</p>
+                </div>
+            </div>
+            <div class="profile-stats">
+                <div class="stat-item">
+                    <h4>4</h4>
+                    <p>Courses</p>
+                </div>
+                <div class="stat-item">
+                    <h4>85%</h4>
+                    <p>Avg. Grade</p>
+                </div>
+                <div class="stat-item">
+                    <h4>24h</h4>
+                    <p>Learning</p>
+                </div>
+            </div>
+            <div class="profile-actions">
+                <a href="#" class="btn btn-sm btn-outline-primary w-100 mb-2">View Profile</a>
+                <a href="#" class="btn btn-sm btn-outline-secondary w-100">Edit Profile</a>
+            </div>
+        </div>
+
+        <!-- Learning Streak -->
+        <div class="dashboard-section mb-4">
+            <div class="section-header mb-3">
+                <h2 class="section-title">Learning Streak</h2>
+            </div>
+            <div class="streak-container text-center">
+                <div class="streak-circle">
+                    <div class="streak-number">7</div>
+                    <div class="streak-text">days</div>
+                </div>
+                <p class="streak-message mt-3">You're on a roll! Keep learning daily to maintain your streak.</p>
+                <div class="streak-calendar mt-3">
+                    <div class="streak-week">
+                        <div class="streak-day completed">M</div>
+                        <div class="streak-day completed">T</div>
+                        <div class="streak-day completed">W</div>
+                        <div class="streak-day completed">T</div>
+                        <div class="streak-day completed">F</div>
+                        <div class="streak-day completed">S</div>
+                        <div class="streak-day completed">S</div>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-sm btn-primary mt-3">Today's Goal</a>
+            </div>
+        </div>
+
+        <!-- Recommended Courses -->
+        <div class="dashboard-section mb-4">
+            <div class="section-header mb-3">
+                <h2 class="section-title">Recommended For You</h2>
+            </div>
+            <div class="recommended-courses">
+                <div class="recommended-course-item">
+                    <div class="recommended-course-image">
+                        <img src="https://images.unsplash.com/photo-1526378800651-c32d170fe6f8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Deep Learning">
+                    </div>
+                    <div class="recommended-course-content">
+                        <h4>Deep Learning Specialization</h4>
+                        <p class="course-instructor">Dr. Michael Chen</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="course-rating">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star-half-alt text-warning"></i>
+                                <span>4.5</span>
+                            </div>
+                            <span class="course-students"><i class="fas fa-users me-1"></i> 2.5k</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="recommended-course-item">
+                    <div class="recommended-course-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Data Science">
+                    </div>
+                    <div class="recommended-course-content">
+                        <h4>Data Science Fundamentals</h4>
+                        <p class="course-instructor">Dr. Sarah Johnson</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="course-rating">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="far fa-star text-warning"></i>
+                                <span>4.0</span>
+                            </div>
+                            <span class="course-students"><i class="fas fa-users me-1"></i> 1.8k</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="recommended-course-item">
+                    <div class="recommended-course-image">
+                        <img src="https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Python Programming">
+                    </div>
+                    <div class="recommended-course-content">
+                        <h4>Advanced Python for AI</h4>
+                        <p class="course-instructor">Prof. David Wilson</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="course-rating">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <span>4.9</span>
+                            </div>
+                            <span class="course-students"><i class="fas fa-users me-1"></i> 3.2k</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <a href="#" class="btn btn-sm btn-link">View All Recommendations</a>
+            </div>
+        </div>
+
+        <!-- Upcoming Events -->
+        <div class="dashboard-section">
+            <div class="section-header mb-3">
+                <h2 class="section-title">Upcoming Events</h2>
+            </div>
+            <div class="calendar-events">
+                <div class="calendar-event">
+                    <div class="event-date">
+                        <span class="event-day">15</span>
+                        <span class="event-month">May</span>
+                    </div>
+                    <div class="event-info">
+                        <h4 class="event-title">AI Study Group</h4>
+                        <p class="event-time"><i class="far fa-clock me-2"></i>7:00 PM - 9:00 PM</p>
+                    </div>
+                </div>
+                <div class="calendar-event">
+                    <div class="event-date">
+                        <span class="event-day">18</span>
+                        <span class="event-month">May</span>
+                    </div>
+                    <div class="event-info">
+                        <h4 class="event-title">Machine Learning Workshop</h4>
+                        <p class="event-time"><i class="far fa-clock me-2"></i>2:00 PM - 5:00 PM</p>
+                    </div>
+                </div>
+                <div class="calendar-event">
+                    <div class="event-date">
+                        <span class="event-day">22</span>
+                        <span class="event-month">May</span>
+                    </div>
+                    <div class="event-info">
+                        <h4 class="event-title">Guest Lecture: AI Ethics</h4>
+                        <p class="event-time"><i class="far fa-clock me-2"></i>11:00 AM - 12:30 PM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <a href="#" class="btn btn-sm btn-link">View Full Calendar</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Learning Progress Chart
+            const ctx = document.getElementById('learningProgressChart').getContext('2d');
+            const learningProgressChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4'],
+                    datasets: [
+                        {
+                            label: 'Hours Spent',
+                            data: [5, 8, 6, 9],
+                            borderColor: '#4361ee',
+                            backgroundColor: 'rgba(67, 97, 238, 0.1)',
+                            tension: 0.4,
+                            fill: true
+                        },
+                        {
+                            label: 'Assignments Completed',
+                            data: [2, 3, 1, 4],
+                            borderColor: '#f72585',
+                            backgroundColor: 'rgba(247, 37, 133, 0.1)',
+                            tension: 0.4,
+                            fill: true
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'top',
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            ticks: {
+                                stepSize: 2
+                            }
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+}
+

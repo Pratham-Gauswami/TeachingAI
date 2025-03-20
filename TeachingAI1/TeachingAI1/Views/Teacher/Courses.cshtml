@@ -1,0 +1,218 @@
+@model IEnumerable<TeachingAI1.ViewModels.CourseViewModel>
+@{
+    ViewData["Title"] = ViewBag.Title ?? "My Courses";
+}
+
+<div class="container-fluid px-4 py-4">
+    <!-- Page Header -->
+    <div class="page-header row align-items-center mb-4">
+        <div class="col-md-6">
+            <h1 class="page-title">@ViewData["Title"]</h1>
+            <p class="page-subtitle">Manage your courses and track student progress</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+            <a asp-action="CreateCourse" class="btn btn-primary">
+                <i class="fas fa-plus me-2"></i> Create New Course
+            </a>
+        </div>
+    </div>
+
+    <!-- Course Filters -->
+    <div class="card mb-4">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <label for="statusFilter" class="form-label">Status</label>
+                    <select class="form-select" id="statusFilter">
+                        <option value="all" selected>All Courses</option>
+                        <option value="active">Active</option>
+                        <option value="upcoming">Upcoming</option>
+                        <option value="completed">Completed</option>
+                    </select>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <label for="sortBy" class="form-label">Sort By</label>
+                    <select class="form-select" id="sortBy">
+                        <option value="title" selected>Title</option>
+                        <option value="students">Number of Students</option>
+                        <option value="date">Start Date</option>
+                        <option value="completion">Completion Rate</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <label for="searchCourse" class="form-label">Search</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="searchCourse" placeholder="Search courses...">
+                        <button class="btn btn-outline-primary" type="button">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Course Statistics -->
+    <div class="row mb-4">
+        <div class="col-md-3 col-sm-6 mb-3 mb-md-0">
+            <div class="stat-card">
+                <div class="stat-card-body">
+                    <div class="stat-card-icon bg-primary">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="stat-card-info">
+                        <h5 class="stat-card-title">@Model.Count()</h5>
+                        <p class="stat-card-text">Total Courses</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-3 mb-md-0">
+            <div class="stat-card">
+                <div class="stat-card-body">
+                    <div class="stat-card-icon bg-success">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-card-info">
+                        <h5 class="stat-card-title">@Model.Sum(c => c.EnrolledStudents)</h5>
+                        <p class="stat-card-text">Total Students</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-3 mb-md-0">
+            <div class="stat-card">
+                <div class="stat-card-body">
+                    <div class="stat-card-icon bg-info">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="stat-card-info">
+                        <h5 class="stat-card-title">@Model.Average(c => c.Completion)%</h5>
+                        <p class="stat-card-text">Avg. Completion</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="stat-card">
+                <div class="stat-card-body">
+                    <div class="stat-card-icon bg-warning">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="stat-card-info">
+                        <h5 class="stat-card-title">@Model.Average(c => c.Rating).ToString("F1")</h5>
+                        <p class="stat-card-text">Avg. Rating</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Course List -->
+    <div class="row">
+        @foreach (var course in Model)
+        {
+            <div class="col-lg-6 mb-4">
+                <div class="course-management-card">
+                    <div class="course-header" style="background: var(--gradient-@(course.Id % 4 + 1));">
+                        <h3 class="course-title">@course.Title</h3>
+                        <p class="course-meta">@course.EnrolledStudents Students • @course.Duration</p>
+                    </div>
+                    <div class="course-content">
+                        <p class="course-description">@course.Description</p>
+                        <div class="course-stats">
+                            <div class="stat-item">
+                                <h4>@course.Attendance%</h4>
+                                <p>Attendance</p>
+                            </div>
+                            <div class="stat-item">
+                                <h4>@course.Completion%</h4>
+                                <p>Completion</p>
+                            </div>
+                            <div class="stat-item">
+                                <h4>@course.Rating.ToString("F1")</h4>
+                                <p>Rating</p>
+                            </div>
+                        </div>
+                        <div class="course-dates">
+                            <div class="row">
+                                <div class="col-6">
+                                    <small class="text-muted">Start Date</small>
+                                    <p>@course.StartDate.ToString("MMM dd, yyyy")</p>
+                                </div>
+                                <div class="col-6">
+                                    <small class="text-muted">End Date</small>
+                                    <p>@course.EndDate.ToString("MMM dd, yyyy")</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-actions">
+                            <a asp-action="CourseDetails" asp-route-id="@course.Id" class="btn btn-sm btn-outline-primary">Manage</a>
+                            <a asp-action="EditCourse" asp-route-id="@course.Id" class="btn btn-sm btn-outline-secondary">Edit</a>
+                            <button type="button" class="btn btn-sm btn-outline-danger" data-bs-toggle="modal" data-bs-target="#deleteCourseModal" data-course-id="@course.Id" data-course-title="@course.Title">
+                                <i class="fas fa-trash-alt"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+<!-- Delete Course Modal -->
+<div class="modal fade" id="deleteCourseModal" tabindex="-1" aria-labelledby="deleteCourseModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="deleteCourseModalLabel">Delete Course</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Are you sure you want to delete the course "<span id="courseTitle"></span>"?</p>
+                <p class="text-danger">This action cannot be undone. All course data, assignments, and student progress will be permanently deleted.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <form id="deleteCourseForm" method="post">
+                    <input type="hidden" id="courseIdToDelete" name="id" />
+                    <button type="submit" class="btn btn-danger">Delete Course</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function() {
+            // Filter functionality
+            $('#statusFilter, #sortBy').change(function() {
+                // In a real application, this would filter and sort the courses
+                // For demo purposes, we'll just reload the page
+                location.reload();
+            });
+            
+            // Search functionality
+            $('#searchCourse').keypress(function(e) {
+                if (e.which == 13) {
+                    // In a real application, this would search for courses
+                    // For demo purposes, we'll just reload the page
+                    location.reload();
+                    return false;
+                }
+            });
+            
+            // Delete course modal
+            $('#deleteCourseModal').on('show.bs.modal', function (event) {
+                var button = $(event.relatedTarget);
+                var courseId = button.data('course-id');
+                var courseTitle = button.data('course-title');
+                
+                $('#courseTitle').text(courseTitle);
+                $('#courseIdToDelete').val(courseId);
+                $('#deleteCourseForm').attr('action', '/Teacher/DeleteCourse/' + courseId);
+            });
+        });
+    </script>
+} 

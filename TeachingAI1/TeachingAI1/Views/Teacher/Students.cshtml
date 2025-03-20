@@ -1,0 +1,321 @@
+@model List<TeachingAI1.Models.StudentViewModel>
+@{
+    ViewData["Title"] = "Students";
+    Layout = "_TeacherLayout";
+}
+
+<div class="container-fluid py-4">
+    <!-- Page Header -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h1 class="h2 mb-1">Students</h1>
+            <p class="text-muted">Manage and monitor your students</p>
+        </div>
+        <div>
+            <button class="btn btn-outline-primary me-2" data-bs-toggle="modal" data-bs-target="#importStudentsModal">
+                <i class="fas fa-file-import me-2"></i>Import Students
+            </button>
+            <a href="#" class="btn btn-primary">
+                <i class="fas fa-plus me-2"></i>Add Student
+            </a>
+        </div>
+    </div>
+
+    <!-- Filters and Search -->
+    <div class="card mb-4">
+        <div class="card-body">
+            <div class="row g-3">
+                <div class="col-md-3">
+                    <label for="courseFilter" class="form-label">Filter by Course</label>
+                    <select class="form-select" id="courseFilter">
+                        <option value="">All Courses</option>
+                        <option value="1">Introduction to Programming</option>
+                        <option value="2">Data Structures and Algorithms</option>
+                        <option value="3">Web Development Fundamentals</option>
+                        <option value="4">Database Management Systems</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label for="progressFilter" class="form-label">Filter by Progress</label>
+                    <select class="form-select" id="progressFilter">
+                        <option value="">All Progress</option>
+                        <option value="1">Below 25%</option>
+                        <option value="2">25% - 50%</option>
+                        <option value="3">50% - 75%</option>
+                        <option value="4">Above 75%</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label for="sortBy" class="form-label">Sort By</label>
+                    <select class="form-select" id="sortBy">
+                        <option value="name">Name</option>
+                        <option value="courses">Enrolled Courses</option>
+                        <option value="progress">Overall Progress</option>
+                        <option value="joinDate">Join Date</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label for="searchStudent" class="form-label">Search</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="searchStudent" placeholder="Search students...">
+                        <button class="btn btn-primary" type="button">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Student Statistics -->
+    <div class="row mb-4">
+        <div class="col-md-3">
+            <div class="stat-card">
+                <div class="stat-card-body">
+                    <div class="stat-card-icon" style="background: var(--gradient-1);">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <div class="stat-card-info">
+                        <h2 class="stat-card-title">@Model.Count</h2>
+                        <p class="stat-card-text">Total Students</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="stat-card">
+                <div class="stat-card-body">
+                    <div class="stat-card-icon" style="background: var(--gradient-2);">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <div class="stat-card-info">
+                        <h2 class="stat-card-title">@(Model.Sum(s => s.EnrolledCourses))</h2>
+                        <p class="stat-card-text">Course Enrollments</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="stat-card">
+                <div class="stat-card-body">
+                    <div class="stat-card-icon" style="background: var(--gradient-3);">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="stat-card-info">
+                        <h2 class="stat-card-title">@(Model.Average(s => s.OverallProgress))%</h2>
+                        <p class="stat-card-text">Average Progress</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="stat-card">
+                <div class="stat-card-body">
+                    <div class="stat-card-icon" style="background: var(--gradient-4);">
+                        <i class="fas fa-user-plus"></i>
+                    </div>
+                    <div class="stat-card-info">
+                        <h2 class="stat-card-title">@Model.Count(s => (DateTime.Now - s.JoinDate).TotalDays < 30)</h2>
+                        <p class="stat-card-text">New This Month</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Students Table -->
+    <div class="card">
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Student</th>
+                            <th>Email</th>
+                            <th>Enrolled Courses</th>
+                            <th>Overall Progress</th>
+                            <th>Join Date</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var student in Model)
+                        {
+                            <tr>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <div class="avatar me-3">
+                                            <img src="https://ui-avatars.com/api/?name=@student.Name.Replace(" ", "+")&background=random" alt="@student.Name" class="rounded-circle" width="40" height="40">
+                                        </div>
+                                        <div>
+                                            <h6 class="mb-0">@student.Name</h6>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>@student.Email</td>
+                                <td>@student.EnrolledCourses</td>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <div class="progress flex-grow-1 me-2" style="height: 6px;">
+                                            <div class="progress-bar" role="progressbar" style="width: @student.OverallProgress%;" aria-valuenow="@student.OverallProgress" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span>@student.OverallProgress%</span>
+                                    </div>
+                                </td>
+                                <td>@student.JoinDate.ToString("MMM dd, yyyy")</td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton@(student.Id)" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Actions
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton@(student.Id)">
+                                            <li><a class="dropdown-item" asp-action="StudentDetails" asp-route-id="@student.Id"><i class="fas fa-eye me-2"></i>View Details</a></li>
+                                            <li><a class="dropdown-item" href="#"><i class="fas fa-envelope me-2"></i>Send Message</a></li>
+                                            <li><a class="dropdown-item" href="#"><i class="fas fa-chart-bar me-2"></i>View Progress</a></li>
+                                            <li><hr class="dropdown-divider"></li>
+                                            <li><a class="dropdown-item text-danger" href="#" data-bs-toggle="modal" data-bs-target="#removeStudentModal" data-student-id="@student.Id" data-student-name="@student.Name"><i class="fas fa-user-minus me-2"></i>Remove Student</a></li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Pagination -->
+            <nav aria-label="Page navigation" class="mt-4">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+<!-- Import Students Modal -->
+<div class="modal fade" id="importStudentsModal" tabindex="-1" aria-labelledby="importStudentsModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="importStudentsModalLabel">Import Students</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Upload a CSV file with student information to import multiple students at once.</p>
+                <div class="mb-3">
+                    <label for="importFile" class="form-label">Select CSV File</label>
+                    <input class="form-control" type="file" id="importFile" accept=".csv">
+                </div>
+                <div class="alert alert-info">
+                    <h6 class="alert-heading">CSV Format</h6>
+                    <p class="mb-0">The CSV file should have the following columns: Name, Email, Phone (optional), Address (optional)</p>
+                </div>
+                <div class="mb-3">
+                    <label for="importCourse" class="form-label">Assign to Course (Optional)</label>
+                    <select class="form-select" id="importCourse">
+                        <option value="">None</option>
+                        <option value="1">Introduction to Programming</option>
+                        <option value="2">Data Structures and Algorithms</option>
+                        <option value="3">Web Development Fundamentals</option>
+                        <option value="4">Database Management Systems</option>
+                    </select>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary">Import Students</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Remove Student Modal -->
+<div class="modal fade" id="removeStudentModal" tabindex="-1" aria-labelledby="removeStudentModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="removeStudentModalLabel">Remove Student</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Are you sure you want to remove <span id="studentNameToRemove"></span> from your students?</p>
+                <div class="alert alert-warning">
+                    <i class="fas fa-exclamation-triangle me-2"></i>
+                    This will remove the student from all your courses and delete their progress data.
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-danger" id="confirmRemoveStudent">Remove Student</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function() {
+            // Handle filter changes
+            $('#courseFilter, #progressFilter, #sortBy').change(function() {
+                // In a real application, this would filter the data or reload the page with filter parameters
+                console.log('Filter changed:', $(this).val());
+            });
+            
+            // Handle search
+            $('#searchStudent').on('keyup', function() {
+                var value = $(this).val().toLowerCase();
+                $('table tbody tr').filter(function() {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+                });
+            });
+            
+            // Handle remove student modal
+            $('#removeStudentModal').on('show.bs.modal', function (event) {
+                var button = $(event.relatedTarget);
+                var studentId = button.data('student-id');
+                var studentName = button.data('student-name');
+                var modal = $(this);
+                modal.find('#studentNameToRemove').text(studentName);
+                modal.find('#confirmRemoveStudent').data('student-id', studentId);
+            });
+            
+            // Handle confirm remove student
+            $('#confirmRemoveStudent').click(function() {
+                var studentId = $(this).data('student-id');
+                // In a real application, this would send an AJAX request to remove the student
+                console.log('Removing student with ID:', studentId);
+                $('#removeStudentModal').modal('hide');
+                
+                // Show success message (in a real app, this would happen after successful AJAX)
+                setTimeout(function() {
+                    $('body').append(
+                        '<div class="position-fixed top-0 end-0 p-3" style="z-index: 1050">' +
+                        '<div id="successToast" class="toast show" role="alert" aria-live="assertive" aria-atomic="true">' +
+                        '<div class="toast-header bg-success text-white">' +
+                        '<strong class="me-auto">Success</strong>' +
+                        '<button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast" aria-label="Close"></button>' +
+                        '</div>' +
+                        '<div class="toast-body">' +
+                        'Student has been successfully removed.' +
+                        '</div>' +
+                        '</div>' +
+                        '</div>'
+                    );
+                    
+                    setTimeout(function() {
+                        $('#successToast').toast('hide');
+                    }, 3000);
+                }, 500);
+            });
+        });
+    </script>
+} 
