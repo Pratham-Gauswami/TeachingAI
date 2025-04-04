@@ -20,6 +20,15 @@
         </div>
     </div>
 
+    <!-- Success Message -->
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show mb-4" role="alert">
+            <i class="fas fa-check-circle me-2"></i> @TempData["SuccessMessage"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
     <!-- Assignment Stats -->
     <div class="row mb-4">
         <div class="col-xl-3 col-md-6 mb-4">
@@ -113,7 +122,13 @@
                         </td>
                         <td><span class="badge bg-warning">In Progress</span></td>
                         <td>
-                            <button class="btn btn-sm btn-primary">Continue</button>
+                            <a href="@Url.Action("AssignmentSubmission", "Student", new { 
+                                id = 1, 
+                                assignmentName = "Final Project Submission", 
+                                courseName = "Advanced Web Development",
+                                dueDate = "Dec 15, 2023",
+                                worth = "30% of final grade"
+                            })" class="btn btn-sm btn-primary">Continue</a>
                         </td>
                     </tr>
                     <tr>
@@ -138,7 +153,13 @@
                         </td>
                         <td><span class="badge bg-secondary">Not Started</span></td>
                         <td>
-                            <button class="btn btn-sm btn-primary">Start</button>
+                            <a href="@Url.Action("AssignmentSubmission", "Student", new { 
+                                id = 2, 
+                                assignmentName = "Weekly Quiz", 
+                                courseName = "Data Structures",
+                                dueDate = "Dec 18, 2023",
+                                worth = "5% of final grade"
+                            })" class="btn btn-sm btn-primary">Start</a>
                         </td>
                     </tr>
                     <tr>
@@ -163,7 +184,13 @@
                         </td>
                         <td><span class="badge bg-warning">In Progress</span></td>
                         <td>
-                            <button class="btn btn-sm btn-primary">Continue</button>
+                            <a href="@Url.Action("AssignmentSubmission", "Student", new { 
+                                id = 3, 
+                                assignmentName = "Research Paper", 
+                                courseName = "Machine Learning Fundamentals",
+                                dueDate = "Dec 30, 2023",
+                                worth = "20% of final grade"
+                            })" class="btn btn-sm btn-primary">Continue</a>
                         </td>
                     </tr>
                 </tbody>
@@ -208,7 +235,14 @@
                         </td>
                         <td><span class="badge bg-danger">Overdue</span></td>
                         <td>
-                            <button class="btn btn-sm btn-danger">Submit Now</button>
+                            <a href="@Url.Action("AssignmentSubmission", "Student", new { 
+                                id = 4, 
+                                assignmentName = "Midterm Exam", 
+                                courseName = "Introduction to Algorithms",
+                                dueDate = "Dec 10, 2023",
+                                worth = "25% of final grade",
+                                isOverdue = true
+                            })" class="btn btn-sm btn-danger">Submit Now</a>
                         </td>
                     </tr>
                     <tr>
@@ -233,7 +267,14 @@
                         </td>
                         <td><span class="badge bg-danger">Overdue</span></td>
                         <td>
-                            <button class="btn btn-sm btn-danger">Submit Now</button>
+                            <a href="@Url.Action("AssignmentSubmission", "Student", new { 
+                                id = 5, 
+                                assignmentName = "Lab Report", 
+                                courseName = "Physics 101",
+                                dueDate = "Dec 11, 2023",
+                                worth = "10% of final grade",
+                                isOverdue = true
+                            })" class="btn btn-sm btn-danger">Submit Now</a>
                         </td>
                     </tr>
                 </tbody>
@@ -278,7 +319,16 @@
                         </td>
                         <td><span class="badge bg-success">95%</span></td>
                         <td>
-                            <button class="btn btn-sm btn-outline-secondary">View Feedback</button>
+                            <a href="@Url.Action("AssignmentFeedback", "Student", new { 
+                                id = 6, 
+                                assignmentName = "Programming Assignment #3", 
+                                courseName = "Java Programming",
+                                submittedDate = "Dec 9, 2023",
+                                dueDate = "Dec 9, 2023",
+                                worth = "15% of final grade",
+                                grade = "95%",
+                                instructorName = "Dr. James Wilson"
+                            })" class="btn btn-sm btn-outline-secondary">View Feedback</a>
                         </td>
                     </tr>
                     <tr>
@@ -303,7 +353,16 @@
                         </td>
                         <td><span class="badge bg-success">88%</span></td>
                         <td>
-                            <button class="btn btn-sm btn-outline-secondary">View Feedback</button>
+                            <a href="@Url.Action("AssignmentFeedback", "Student", new { 
+                                id = 7, 
+                                assignmentName = "Case Study Analysis", 
+                                courseName = "Business Ethics",
+                                submittedDate = "Dec 5, 2023",
+                                dueDate = "Dec 5, 2023",
+                                worth = "20% of final grade",
+                                grade = "88%",
+                                instructorName = "Dr. Sarah Johnson"
+                            })" class="btn btn-sm btn-outline-secondary">View Feedback</a>
                         </td>
                     </tr>
                     <tr>
@@ -328,7 +387,16 @@
                         </td>
                         <td><span class="badge bg-success">92%</span></td>
                         <td>
-                            <button class="btn btn-sm btn-outline-secondary">View Feedback</button>
+                            <a href="@Url.Action("AssignmentFeedback", "Student", new { 
+                                id = 8, 
+                                assignmentName = "Group Presentation", 
+                                courseName = "Communication Skills",
+                                submittedDate = "Nov 28, 2023",
+                                dueDate = "Nov 28, 2023",
+                                worth = "15% of final grade",
+                                grade = "92%",
+                                instructorName = "Prof. Michael Brown"
+                            })" class="btn btn-sm btn-outline-secondary">View Feedback</a>
                         </td>
                     </tr>
                 </tbody>

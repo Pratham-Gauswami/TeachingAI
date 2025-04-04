@@ -1,0 +1,330 @@
+@model CourseDetails
+@{
+    ViewData["Title"] = Model.Title;
+    Layout = "_StudentLayout";
+}
+
+<div class="container-fluid py-4">
+    <!-- Course Header -->
+    <div class="row mb-4">
+        <div class="col-lg-8">
+            <div class="d-flex align-items-center mb-3">
+                <a href="@Url.Action("Courses", "Student")" class="btn btn-sm btn-outline-primary me-3">
+                    <i class="fas fa-arrow-left me-2"></i>Back to Courses
+                </a>
+                <h1 class="h2 mb-0">@Model.Title</h1>
+            </div>
+            <p class="lead">@Model.Description</p>
+            <div class="d-flex align-items-center mb-3">
+                <div class="instructor-info me-4">
+                    <span class="text-muted">Instructor:</span>
+                    <span class="fw-bold">@Model.Instructor</span>
+                </div>
+                <div class="rating-info me-4">
+                    <span class="text-muted">Rating:</span>
+                    <span class="fw-bold">
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star-half-alt text-warning"></i>
+                        4.5
+                    </span>
+                </div>
+                <div class="students-info">
+                    <span class="text-muted">Students:</span>
+                    <span class="fw-bold">1,250+</span>
+                </div>
+            </div>
+            <div class="progress-container mb-3">
+                <div class="d-flex justify-content-between mb-1">
+                    <span>Your Progress</span>
+                    <span>@Model.Progress%</span>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: @Model.Progress%;" aria-valuenow="@Model.Progress" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+            <div class="course-stats d-flex flex-wrap">
+                <div class="course-stat-item me-4">
+                    <i class="fas fa-book-open me-2 text-primary"></i>
+                    <span>@Model.LessonsCompleted/@Model.LessonsTotal Lessons Completed</span>
+                </div>
+                <div class="course-stat-item me-4">
+                    <i class="fas fa-clock me-2 text-primary"></i>
+                    <span>@Model.TimeLeft Remaining</span>
+                </div>
+                <div class="course-stat-item">
+                    <i class="fas fa-calendar-alt me-2 text-primary"></i>
+                    <span>Status: @Model.Status</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="card border-0 shadow-sm">
+                <div class="card-body">
+                    <h4 class="card-title">Course Preview</h4>
+                    <div class="course-preview-image mb-3">
+                        <img src="@Model.ImageUrl" alt="@Model.Title" class="img-fluid rounded">
+                    </div>
+                    <div class="d-grid gap-2 mt-4">
+                        <button id="continueBtn" class="btn btn-primary">
+                            <i class="fas fa-play-circle me-2"></i>Continue Learning
+                        </button>
+                        <button id="downloadBtn" class="btn btn-outline-primary">
+                            <i class="fas fa-download me-2"></i>Download Materials
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Course Content -->
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card border-0 shadow-sm mb-4">
+                <div class="card-body">
+                    <h4 class="card-title mb-4">Course Content</h4>
+                    <div class="accordion" id="courseModules">
+                        @for (int i = 0; i < Model.Modules.Count; i++)
+                        {
+                            var module = Model.Modules[i];
+                            var moduleId = $"module{i+1}";
+                            var headerId = $"heading{i+1}";
+                            var collapseId = $"collapse{i+1}";
+                            var statusClass = module.Status == "Completed" ? "text-success" : 
+                                              module.Status == "In Progress" ? "text-primary" : "text-muted";
+                            var isActive = module.Status == "In Progress";
+                            
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="@headerId">
+                                    <button class="accordion-button @(isActive ? "" : "collapsed")" type="button" data-bs-toggle="collapse" data-bs-target="#@collapseId" aria-expanded="@(isActive ? "true" : "false")" aria-controls="@collapseId">
+                                        <div class="w-100 d-flex justify-content-between align-items-center">
+                                            <span>Module @(i+1): @module.Title</span>
+                                            <span class="badge rounded-pill @statusClass" style="margin-right: 10px;">
+                                                @module.Status
+                                            </span>
+                                        </div>
+                                    </button>
+                                </h2>
+                                <div id="@collapseId" class="accordion-collapse collapse @(isActive ? "show" : "")" aria-labelledby="@headerId" data-bs-parent="#courseModules">
+                                    <div class="accordion-body">
+                                        <p>@module.Description</p>
+                                        <div class="module-progress mb-3">
+                                            <div class="d-flex justify-content-between mb-1">
+                                                <span>Progress</span>
+                                                <span>@(module.CompletedLessons)/@(module.LessonCount) Lessons</span>
+                                            </div>
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" style="width: @((module.CompletedLessons * 100) / Math.Max(1, module.LessonCount))%;" aria-valuenow="@((module.CompletedLessons * 100) / Math.Max(1, module.LessonCount))" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                        <div class="lessons-list">
+                                            @for (int j = 1; j <= module.LessonCount; j++)
+                                            {
+                                                var isCompleted = j <= module.CompletedLessons;
+                                                var lessonTitle = $"Lesson {j}: Example Lesson {j}";
+                                                
+                                                <div class="lesson-item d-flex justify-content-between align-items-center p-2 border-bottom">
+                                                    <div class="d-flex align-items-center">
+                                                        @if (isCompleted)
+                                                        {
+                                                            <i class="fas fa-check-circle text-success me-2"></i>
+                                                        }
+                                                        else
+                                                        {
+                                                            <i class="far fa-circle text-muted me-2"></i>
+                                                        }
+                                                        <span>@lessonTitle</span>
+                                                    </div>
+                                                    <div>
+                                                        @if (isCompleted)
+                                                        {
+                                                            <button class="btn btn-sm btn-outline-primary">Review</button>
+                                                        }
+                                                        else if (j == module.CompletedLessons + 1 && module.Status == "In Progress")
+                                                        {
+                                                            <button class="btn btn-sm btn-primary">Continue</button>
+                                                        }
+                                                        else
+                                                        {
+                                                            <button class="btn btn-sm btn-outline-secondary" disabled>Locked</button>
+                                                        }
+                                                    </div>
+                                                </div>
+                                            }
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+            <!-- Resources -->
+            <div class="card border-0 shadow-sm mb-4">
+                <div class="card-body">
+                    <h4 class="card-title mb-3">Resources</h4>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div>
+                                <i class="fas fa-file-pdf text-danger me-2"></i>
+                                <span>Course Syllabus</span>
+                            </div>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Download</a>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div>
+                                <i class="fas fa-file-alt text-primary me-2"></i>
+                                <span>Study Guide</span>
+                            </div>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Download</a>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div>
+                                <i class="fas fa-file-code text-success me-2"></i>
+                                <span>Code Samples</span>
+                            </div>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Download</a>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                            <div>
+                                <i class="fas fa-file-powerpoint text-warning me-2"></i>
+                                <span>Presentation Slides</span>
+                            </div>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Download</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Upcoming Assignments -->
+            <div class="card border-0 shadow-sm mb-4">
+                <div class="card-body">
+                    <h4 class="card-title mb-3">Upcoming Assignments</h4>
+                    <div class="assignment-item p-3 mb-3 border rounded">
+                        <div class="d-flex justify-content-between">
+                            <h5 class="mb-1">Module Quiz</h5>
+                            <span class="badge bg-warning">Due in 2 days</span>
+                        </div>
+                        <p class="text-muted mb-2">Module 3: Knowledge Representation</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span><i class="fas fa-clock me-1"></i> Est. 30 min</span>
+                            <a href="#" class="btn btn-sm btn-outline-primary">Start Quiz</a>
+                        </div>
+                    </div>
+                    <div class="assignment-item p-3 border rounded">
+                        <div class="d-flex justify-content-between">
+                            <h5 class="mb-1">Final Project</h5>
+                            <span class="badge bg-info">Due in 2 weeks</span>
+                        </div>
+                        <p class="text-muted mb-2">Course Project</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span><i class="fas fa-clock me-1"></i> Est. 5 hours</span>
+                            <a href="#" class="btn btn-sm btn-outline-secondary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Discussion Forum -->
+            <div class="card border-0 shadow-sm">
+                <div class="card-body">
+                    <h4 class="card-title mb-3">Discussion Forum</h4>
+                    <p class="text-muted">Join the conversation with your instructor and fellow students.</p>
+                    <div class="forum-stats d-flex justify-content-between mb-3">
+                        <div class="forum-stat text-center">
+                            <h5>24</h5>
+                            <span class="text-muted">Topics</span>
+                        </div>
+                        <div class="forum-stat text-center">
+                            <h5>156</h5>
+                            <span class="text-muted">Posts</span>
+                        </div>
+                        <div class="forum-stat text-center">
+                            <h5>3</h5>
+                            <span class="text-muted">Unread</span>
+                        </div>
+                    </div>
+                    <div class="d-grid">
+                        <a href="#" class="btn btn-outline-primary">View Forum</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Styles {
+    <style>
+        .course-stats {
+            margin-bottom: 20px;
+        }
+        
+        .course-stat-item {
+            margin-bottom: 10px;
+        }
+        
+        .accordion-button:not(.collapsed) {
+            background-color: rgba(67, 97, 238, 0.1);
+            color: #4361ee;
+        }
+        
+        .lesson-item:hover {
+            background-color: #f8f9fa;
+        }
+        
+        .module-progress {
+            margin-bottom: 15px;
+        }
+        
+        .forum-stat h5 {
+            margin-bottom: 0;
+            color: #4361ee;
+        }
+    </style>
+}
+
+@section Scripts {
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Handle Continue Learning button click
+            document.getElementById('continueBtn').addEventListener('click', function() {
+                // Find the first "In Progress" module
+                const inProgressModule = document.querySelector('.accordion-item .badge.text-primary');
+                if (inProgressModule) {
+                    // Find the Continue button in that module
+                    const moduleItem = inProgressModule.closest('.accordion-item');
+                    const continueBtn = moduleItem.querySelector('.btn-primary');
+                    
+                    // Open the module
+                    const collapseId = moduleItem.querySelector('.accordion-collapse').id;
+                    const moduleCollapse = new bootstrap.Collapse(document.getElementById(collapseId), {
+                        show: true
+                    });
+                    
+                    // Scroll to the module
+                    setTimeout(() => {
+                        moduleItem.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    }, 300);
+                    
+                    // If there's a continue button, click it after scrolling
+                    if (continueBtn) {
+                        setTimeout(() => {
+                            continueBtn.click();
+                        }, 800);
+                    }
+                }
+            });
+            
+            // Handle Download Materials button click
+            document.getElementById('downloadBtn').addEventListener('click', function() {
+                alert('Course materials will be downloaded as a ZIP file.');
+            });
+        });
+    </script>
+} 
