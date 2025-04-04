@@ -449,6 +449,10 @@
       "PackagePath": "staticwebassets/images/signup-image.jpg"
     },
     {
+      "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/js/assignment-dashboard.js",
+      "PackagePath": "staticwebassets/js/assignment-dashboard.js"
+    },
+    {
       "Id": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/js/main.js",
       "PackagePath": "staticwebassets/js/main.js"
     },

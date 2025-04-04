@@ -2,11 +2,11 @@ public class Course
 {
     public int Id {get; set;}  // Primary key
     public string Name {get; set;} = string.Empty;  // Course name
-    public int TeacherId {get; set;}  // Foreign key to Teacher
+    public int TeacherId {get; set;}  // Foreign key to User (teacher)
     public string Status {get; set;} = "Active";  // Status (Active, Draft, etc.)
     
-    // Navigation property
-    public User Teacher {get; set;}
+    // Navigation property - nullable since the Teacher entity may not exist yet
+    public Teacher? Teacher {get; set;}
     
     // Collections
     public ICollection<Lesson> Lessons {get; set;} = new List<Lesson>();

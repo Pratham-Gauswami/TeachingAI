@@ -1,15 +1,14 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using TeachingAI1.ViewModels;
 
-namespace TeachingAI1.Models
+namespace TeachingAI1.ViewModels
 {
     public class StudentViewModel
     {
         public int Id { get; set; }
         
-        [Required(ErrorMessage = "Student name is required")]
+        [Required(ErrorMessage = "Name is required")]
         [StringLength(100, ErrorMessage = "Name cannot be longer than 100 characters")]
         public string Name { get; set; }
         
@@ -25,7 +24,7 @@ namespace TeachingAI1.Models
         [Display(Name = "Join Date")]
         public DateTime JoinDate { get; set; }
         
-        // Navigation properties
+        // Navigation property
         public List<CourseViewModel> Courses { get; set; }
     }
 } 

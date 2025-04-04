@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "86e3WcD0Lk01ClWQKWBKBRToyxzCPoJNLwrgbdBmcrA=",
+  "Hash": "SJ2h8N7tolPbb9NcNaePrmhWrdLIk/AlIgO+AdL+bUE=",
   "Source": "TeachingAI1",
   "BasePath": "_content/TeachingAI1",
   "Mode": "Default",
@@ -162,6 +162,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/lib/jquery-validation/dist/additional-methods.js"
+    },
+    {
+      "Identity": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/obj/Debug/net9.0/compressed/3ledckrevs-iua5vzkovp.gz",
+      "SourceId": "TeachingAI1",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/TeachingAI1",
+      "RelativePath": "js/assignment-dashboard#[.{fingerprint=iua5vzkovp}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/js/assignment-dashboard.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "g5vwbz00ti",
+      "Integrity": "tLyK1jppT0wE7WkTQu8zVnRE5YCiODPmPBWIKhhtPYE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/js/assignment-dashboard.js"
     },
     {
       "Identity": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/obj/Debug/net9.0/compressed/3rj6bqqeoq-r4e9w2rdcm.gz",
@@ -4467,6 +4488,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/images/Teacher.jpg"
+    },
+    {
+      "Identity": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/js/assignment-dashboard.js",
+      "SourceId": "TeachingAI1",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/",
+      "BasePath": "_content/TeachingAI1",
+      "RelativePath": "js/assignment-dashboard#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "iua5vzkovp",
+      "Integrity": "1g53Jg8L1DS7rUFjKaJtxdRCeEKQ/Z/ERv2mMPNi1RE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/js/assignment-dashboard.js"
     },
     {
       "Identity": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/js/main.js",
@@ -22467,6 +22509,304 @@
         {
           "Name": "integrity",
           "Value": "sha256-AcK2ezggZpXloiDxDVwZkxOJlalsO/whbP9JMO4WA1A="
+        }
+      ]
+    },
+    {
+      "Route": "js/assignment-dashboard.iua5vzkovp.js",
+      "AssetFile": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/obj/Debug/net9.0/compressed/3ledckrevs-iua5vzkovp.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000322476620"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3100"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tLyK1jppT0wE7WkTQu8zVnRE5YCiODPmPBWIKhhtPYE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 04 Apr 2025 03:28:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"1g53Jg8L1DS7rUFjKaJtxdRCeEKQ/Z/ERv2mMPNi1RE=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "iua5vzkovp"
+        },
+        {
+          "Name": "label",
+          "Value": "js/assignment-dashboard.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1g53Jg8L1DS7rUFjKaJtxdRCeEKQ/Z/ERv2mMPNi1RE="
+        }
+      ]
+    },
+    {
+      "Route": "js/assignment-dashboard.iua5vzkovp.js",
+      "AssetFile": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/js/assignment-dashboard.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13536"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1g53Jg8L1DS7rUFjKaJtxdRCeEKQ/Z/ERv2mMPNi1RE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 04 Apr 2025 03:28:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "iua5vzkovp"
+        },
+        {
+          "Name": "label",
+          "Value": "js/assignment-dashboard.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1g53Jg8L1DS7rUFjKaJtxdRCeEKQ/Z/ERv2mMPNi1RE="
+        }
+      ]
+    },
+    {
+      "Route": "js/assignment-dashboard.iua5vzkovp.js.gz",
+      "AssetFile": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/obj/Debug/net9.0/compressed/3ledckrevs-iua5vzkovp.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3100"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tLyK1jppT0wE7WkTQu8zVnRE5YCiODPmPBWIKhhtPYE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 04 Apr 2025 03:28:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "iua5vzkovp"
+        },
+        {
+          "Name": "label",
+          "Value": "js/assignment-dashboard.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-tLyK1jppT0wE7WkTQu8zVnRE5YCiODPmPBWIKhhtPYE="
+        }
+      ]
+    },
+    {
+      "Route": "js/assignment-dashboard.js",
+      "AssetFile": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/obj/Debug/net9.0/compressed/3ledckrevs-iua5vzkovp.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000322476620"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3100"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tLyK1jppT0wE7WkTQu8zVnRE5YCiODPmPBWIKhhtPYE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 04 Apr 2025 03:28:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"1g53Jg8L1DS7rUFjKaJtxdRCeEKQ/Z/ERv2mMPNi1RE=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1g53Jg8L1DS7rUFjKaJtxdRCeEKQ/Z/ERv2mMPNi1RE="
+        }
+      ]
+    },
+    {
+      "Route": "js/assignment-dashboard.js",
+      "AssetFile": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/wwwroot/js/assignment-dashboard.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13536"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1g53Jg8L1DS7rUFjKaJtxdRCeEKQ/Z/ERv2mMPNi1RE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 04 Apr 2025 03:28:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1g53Jg8L1DS7rUFjKaJtxdRCeEKQ/Z/ERv2mMPNi1RE="
+        }
+      ]
+    },
+    {
+      "Route": "js/assignment-dashboard.js.gz",
+      "AssetFile": "/Users/prathamgauswami/Desktop/SIDE PROJECTS/cSharpWebApp/TeachingAI1/TeachingAI1/obj/Debug/net9.0/compressed/3ledckrevs-iua5vzkovp.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3100"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tLyK1jppT0wE7WkTQu8zVnRE5YCiODPmPBWIKhhtPYE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 04 Apr 2025 03:28:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-tLyK1jppT0wE7WkTQu8zVnRE5YCiODPmPBWIKhhtPYE="
         }
       ]
     },
@@ -41575,7 +41915,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Mar 2025 04:13:09 GMT"
+          "Value": "Thu, 20 Mar 2025 23:00:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -41628,7 +41968,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Mar 2025 04:13:09 GMT"
+          "Value": "Thu, 20 Mar 2025 23:00:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -41665,7 +42005,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Mar 2025 04:13:09 GMT"
+          "Value": "Thu, 20 Mar 2025 23:00:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -41712,7 +42052,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Mar 2025 04:13:09 GMT"
+          "Value": "Thu, 20 Mar 2025 23:00:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -41765,7 +42105,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Mar 2025 04:13:09 GMT"
+          "Value": "Thu, 20 Mar 2025 23:00:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -41802,7 +42142,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Mar 2025 04:13:09 GMT"
+          "Value": "Thu, 20 Mar 2025 23:00:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -41849,7 +42189,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Mar 2025 04:13:09 GMT"
+          "Value": "Thu, 20 Mar 2025 23:00:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -41910,7 +42250,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Mar 2025 04:13:09 GMT"
+          "Value": "Thu, 20 Mar 2025 23:00:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -41955,7 +42295,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Mar 2025 04:13:09 GMT"
+          "Value": "Thu, 20 Mar 2025 23:00:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -42010,7 +42350,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Mar 2025 04:13:09 GMT"
+          "Value": "Thu, 20 Mar 2025 23:00:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -42071,7 +42411,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Mar 2025 04:13:09 GMT"
+          "Value": "Thu, 20 Mar 2025 23:00:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -42116,7 +42456,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 16 Mar 2025 04:13:09 GMT"
+          "Value": "Thu, 20 Mar 2025 23:00:51 GMT"
         },
         {
           "Name": "Cache-Control",

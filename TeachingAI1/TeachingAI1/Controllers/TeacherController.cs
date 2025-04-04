@@ -7,16 +7,22 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using TeachingAI1.ViewModels;
+using Microsoft.AspNetCore.Authorization;
+using System.Security.Claims;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Hosting;
 
 namespace TeachingAI1.Controllers
 {
     public class TeacherController : Controller
     {
         private readonly ApplicationDbContext _context;
+        private readonly IHostEnvironment _environment;
 
-        public TeacherController(ApplicationDbContext context)
+        public TeacherController(ApplicationDbContext context, IHostEnvironment environment)
         {
             _context = context;
+            _environment = environment;
         }
 
         // GET: Teacher
@@ -163,39 +169,76 @@ namespace TeachingAI1.Controllers
         
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> CreateCourse(ViewModels.CourseViewModel model)
+        public async Task<IActionResult> CreateCourse(CourseViewModel model)
         {
-            // Remove validation errors for fields that we don't need
-            ModelState.Remove("Students");
-            ModelState.Remove("Assignments");
-            ModelState.Remove("Grade");
-            
-            // Ensure Name and Title are synchronized (since we use Title in the view but Name in the database)
-            if (!string.IsNullOrEmpty(model.Title) && string.IsNullOrEmpty(model.Name))
-            {
-                model.Name = model.Title;
-            }
-            else if (!string.IsNullOrEmpty(model.Name) && string.IsNullOrEmpty(model.Title))
-            {
-                model.Title = model.Name;
-            }
-            
             if (ModelState.IsValid)
             {
                 try
                 {
-                    // Get the current user's ID (this is a placeholder)
-                    var teacherId = 1; // In a real application, get the actual ID from the identity
-
-                    // Map CourseViewModel to Course (only saving properties that exist in the database)
+                    // STEP 1: Get the current user ID (try multiple approaches)
+                    int? userId = null;
+                    
+                    // Try claims-based auth first (most common in ASP.NET Core)
+                    if (User.Identity.IsAuthenticated && User.FindFirstValue(ClaimTypes.NameIdentifier) != null)
+                    {
+                        userId = int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier));
+                        Console.WriteLine($"Current User ID (Claims): {userId}");
+                    }
+                    // Then try session-based auth
+                    else if (HttpContext.Session.GetInt32("UserId") != null)
+                    {
+                        userId = HttpContext.Session.GetInt32("UserId");
+                        Console.WriteLine($"Current User ID (Session): {userId}");
+                    }
+                    // If neither works, check if we're in development and use a test ID
+                    else if (_environment.IsDevelopment())
+                    {
+                        // For development only - automatically use test teacher
+                        userId = 1;
+                        ModelState.AddModelError("", "Using test teacher (ID=1) since no authenticated user found");
+                        Console.WriteLine($"Using Test User ID: {userId}");
+                    }
+                    else
+                    {
+                        ModelState.AddModelError("", "You must be logged in as a teacher to create courses.");
+                        return View(model);
+                    }
+                    
+                    // STEP 2: Validate teacher role and get teacher record
+                    var user = await _context.Users.FirstOrDefaultAsync(u => u.Id == userId);
+                    
+                    if (user == null) 
+                    {
+                        ModelState.AddModelError("", $"User with ID {userId} not found.");
+                        return View(model);
+                    }
+                    
+                    if (user.Role != "Teacher")
+                    {
+                        ModelState.AddModelError("", "Only users with the Teacher role can create courses.");
+                        return View(model);
+                    }
+                    
+                    // STEP 3: Get or create teacher record
+                    var teacher = await _context.Teachers.FirstOrDefaultAsync(t => t.UserId == userId);
+                    
+                    if (teacher == null)
+                    {
+                        // Create a teacher record if it doesn't exist
+                        teacher = new Teacher { UserId = user.Id };
+                        _context.Teachers.Add(teacher);
+                        await _context.SaveChangesAsync();
+                        ModelState.AddModelError("", $"Created teacher record for user {user.Name}");
+                    }
+                    
+                    // STEP 4: Create the course
                     var course = new Course
                     {
-                        Name = model.Title, // Use Title from the model
+                        Name = model.Name,
                         Status = model.Status,
-                        TeacherId = teacherId
-                        // Description and CreatedOn are not included since they don't exist in the database
+                        TeacherId = teacher.Id  // Use the teacher's ID, not the user ID
                     };
-
+                    
                     _context.Courses.Add(course);
                     await _context.SaveChangesAsync();
 
@@ -205,14 +248,16 @@ namespace TeachingAI1.Controllers
                 catch (Exception ex)
                 {
                     // Log the error
-                    // _logger.LogError(ex, "Error creating course");
-                    
                     ModelState.AddModelError("", "An error occurred while saving the course. Please try again.");
-                    return View(model);
+                    ModelState.AddModelError("", ex.Message);
+                    
+                    if (ex.InnerException != null)
+                    {
+                        ModelState.AddModelError("", $"Inner Exception: {ex.InnerException.Message}");
+                    }
                 }
             }
 
-            // If we got this far, something failed, redisplay form
             return View(model);
         }
         
@@ -305,13 +350,13 @@ namespace TeachingAI1.Controllers
         
         public IActionResult Students()
         {
-            ViewData["Title"] = "My Students";
+            ViewData["Title"] = "Students";
             
-            // In a real application, this data would come from a database
+            // In a real application, this would fetch the students from a database
             // For demo purposes, we're creating sample students
-            var students = new List<StudentViewModel>
+            var students = new List<TeachingAI1.ViewModels.StudentViewModel>
             {
-                new StudentViewModel
+                new TeachingAI1.ViewModels.StudentViewModel
                 {
                     Id = 1,
                     Name = "John Doe",
@@ -320,41 +365,68 @@ namespace TeachingAI1.Controllers
                     OverallProgress = 85,
                     JoinDate = DateTime.Now.AddDays(-90)
                 },
-                new StudentViewModel
+                new TeachingAI1.ViewModels.StudentViewModel
                 {
                     Id = 2,
                     Name = "Jane Smith",
                     Email = "jane.smith@example.com",
                     EnrolledCourses = 2,
                     OverallProgress = 92,
-                    JoinDate = DateTime.Now.AddDays(-75)
+                    JoinDate = DateTime.Now.AddDays(-45)
                 },
-                new StudentViewModel
+                new TeachingAI1.ViewModels.StudentViewModel
                 {
                     Id = 3,
                     Name = "Michael Johnson",
                     Email = "michael.johnson@example.com",
                     EnrolledCourses = 4,
                     OverallProgress = 78,
-                    JoinDate = DateTime.Now.AddDays(-120)
+                    JoinDate = DateTime.Now.AddDays(-180)
                 },
-                new StudentViewModel
+                new TeachingAI1.ViewModels.StudentViewModel
                 {
                     Id = 4,
+                    Name = "Sarah Williams",
+                    Email = "sarah.williams@example.com",
+                    EnrolledCourses = 1,
+                    OverallProgress = 65,
+                    JoinDate = DateTime.Now.AddDays(-15)
+                },
+                new TeachingAI1.ViewModels.StudentViewModel
+                {
+                    Id = 5,
+                    Name = "Robert Brown",
+                    Email = "robert.brown@example.com",
+                    EnrolledCourses = 3,
+                    OverallProgress = 45,
+                    JoinDate = DateTime.Now.AddDays(-30)
+                },
+                new TeachingAI1.ViewModels.StudentViewModel
+                {
+                    Id = 6,
                     Name = "Emily Davis",
                     Email = "emily.davis@example.com",
                     EnrolledCourses = 2,
-                    OverallProgress = 95,
+                    OverallProgress = 88,
+                    JoinDate = DateTime.Now.AddDays(-10)
+                },
+                new TeachingAI1.ViewModels.StudentViewModel
+                {
+                    Id = 7,
+                    Name = "David Miller",
+                    Email = "david.miller@example.com",
+                    EnrolledCourses = 3,
+                    OverallProgress = 72,
                     JoinDate = DateTime.Now.AddDays(-60)
                 },
-                new StudentViewModel
+                new TeachingAI1.ViewModels.StudentViewModel
                 {
-                    Id = 5,
-                    Name = "Robert Wilson",
-                    Email = "robert.wilson@example.com",
-                    EnrolledCourses = 3,
-                    OverallProgress = 88,
-                    JoinDate = DateTime.Now.AddDays(-100)
+                    Id = 8,
+                    Name = "Jessica Wilson",
+                    Email = "jessica.wilson@example.com",
+                    EnrolledCourses = 1,
+                    OverallProgress = 25,
+                    JoinDate = DateTime.Now.AddDays(-5)
                 }
             };
             
@@ -367,7 +439,7 @@ namespace TeachingAI1.Controllers
             
             // In a real application, this would fetch the student from a database
             // For demo purposes, we're creating a sample student
-            var student = new StudentViewModel
+            var student = new TeachingAI1.ViewModels.StudentViewModel
             {
                 Id = id,
                 Name = id == 1 ? "John Doe" : "Jane Smith",
@@ -577,5 +649,124 @@ namespace TeachingAI1.Controllers
             HttpContext.Session.Clear();
             return RedirectToAction("Index", "Home");
         }
+
+        public IActionResult GradeSubmissions(int id)
+        {
+            ViewData["Title"] = "Grade Submissions";
+            
+            // In a real application, this would fetch the assignment from a database
+            // For demo purposes, we're creating a sample assignment similar to AssignmentDetails
+            var assignment = new AssignmentViewModel
+            {
+                Id = id,
+                Title = id == 1 ? "AI Ethics Case Study" : "Neural Networks Project",
+                CourseTitle = id == 1 ? "Introduction to AI" : "Machine Learning Fundamentals",
+                DueDate = DateTime.Now.AddDays(id == 1 ? 1 : 3),
+                AssignedStudents = id == 1 ? 32 : 28,
+                SubmittedCount = id == 1 ? 18 : 12,
+                Status = "Upcoming",
+                Description = "In this assignment, students will explore the ethical implications of AI in various contexts.",
+                Instructions = "1. Choose one of the provided case studies\n2. Identify the ethical issues involved",
+                PointsPossible = 100,
+                Submissions = new List<SubmissionViewModel>
+                {
+                    new SubmissionViewModel
+                    {
+                        Id = 1,
+                        StudentName = "John Doe",
+                        SubmissionDate = DateTime.Now.AddDays(-1),
+                        Status = "Submitted",
+                        Grade = null,
+                        Feedback = ""
+                    },
+                    new SubmissionViewModel
+                    {
+                        Id = 2,
+                        StudentName = "Jane Smith",
+                        SubmissionDate = DateTime.Now.AddDays(-2),
+                        Status = "Submitted",
+                        Grade = 85,
+                        Feedback = "Good work! Your analysis of the ethical implications was thorough."
+                    },
+                    new SubmissionViewModel
+                    {
+                        Id = 3,
+                        StudentName = "Michael Johnson",
+                        SubmissionDate = null,
+                        Status = "Not Submitted",
+                        Grade = null,
+                        Feedback = ""
+                    },
+                    new SubmissionViewModel
+                    {
+                        Id = 4,
+                        StudentName = "Sarah Williams",
+                        SubmissionDate = DateTime.Now.AddDays(-1).AddHours(3),
+                        Status = "Submitted",
+                        Grade = null,
+                        Feedback = ""
+                    },
+                    new SubmissionViewModel
+                    {
+                        Id = 5,
+                        StudentName = "Robert Brown",
+                        SubmissionDate = DateTime.Now.AddDays(-3),
+                        Status = "Graded",
+                        Grade = 92,
+                        Feedback = "Excellent work! Your analysis was comprehensive and well-reasoned."
+                    },
+                    new SubmissionViewModel
+                    {
+                        Id = 6,
+                        StudentName = "Emily Davis",
+                        SubmissionDate = DateTime.Now.AddDays(2),
+                        Status = "Late",
+                        Grade = null,
+                        Feedback = ""
+                    }
+                }
+            };
+            
+            return View(assignment);
+        }
+        
+        [HttpPost]
+        public IActionResult SaveGrade(int submissionId, int assignmentId, int? grade, string feedback)
+        {
+            // In a real application, this would save the grade to the database
+            // For demo purposes, we'll just return a success response
+            
+            return Json(new { success = true, message = "Grade saved successfully" });
+        }
+        
+        [HttpPost]
+        public IActionResult SendReminder(int assignmentId, List<int> studentIds)
+        {
+            // In a real application, this would send reminders to students
+            // For demo purposes, we'll just return a success response
+            
+            return Json(new { success = true, message = $"Reminders sent to {studentIds.Count} students" });
+        }
+        
+        public IActionResult PublicProfile()
+        {
+            ViewData["Title"] = "Public Profile";
+            return View();
+        }
+        
+        [HttpPost]
+        public IActionResult UpdateProfileVisibility([FromBody] ProfileVisibilityModel model)
+        {
+            // In a real application, this would update the profile visibility in the database
+            // For demo purposes, we'll just return a success response
+            
+            return Json(new { success = true, message = model.IsEnabled ? "Profile enabled" : "Profile disabled" });
+        }
+    }
+
+    // Model class for profile visibility
+    public class ProfileVisibilityModel
+    {
+        public bool IsEnabled { get; set; }
     }
 }
